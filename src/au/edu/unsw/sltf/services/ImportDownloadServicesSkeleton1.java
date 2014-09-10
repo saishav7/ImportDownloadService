@@ -14,7 +14,7 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
      */
     public class ImportDownloadServicesSkeleton implements ImportDownloadServicesSkeletonInterface{
 
-        private String resourcesFolder = "/home/hari/apache-tomcat-7.0.42/webapps/ROOT/cs9322ass1/";
+        private String resourcesFolder = System.getProperty("catalina.home") + "/webapps/ROOT/cs9322ass1/";
         
          
         /**
