@@ -7,6 +7,14 @@
  */
     package au.edu.unsw.sltf.services;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Random;
+
+import org.apache.commons.io.FileUtils;
+
+import au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile;
+import au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse;
 import au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData;
 import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse;
     /**
@@ -14,7 +22,7 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
      */
     public class ImportDownloadServicesSkeleton implements ImportDownloadServicesSkeletonInterface{
         
-         
+        private String resourcesFolder = System.getProperty("catalina.home") + "/webapps/ROOT/cs9322ass1/";
         /**
          * Auto generated method signature
          * 
@@ -29,19 +37,35 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                   )
             throws ImportDownloadFaultException{
                 //TODO : fill this with the necessary business logic
-                	 ImportMarketData req = importMarketData0.getImportMarketData();
-                     StringBuilder sbf = new StringBuilder();
-                     sbf.append("Security Code: ").append(req.getSec()).append("\r\n");
-                     sbf.append("Start date: ").append(req.getStartDate()).append("\r\n");
-                     sbf.append("End date: ").append(req.getEndDate()).append("\r\n");
-                     sbf.append("Data source: ").append(req.getDataSourceURL()).append("\r\n");
-                     String returnStr = sbf.toString();
-
-                     ImportMarketDataResponseDocument resDoc = ImportMarketDataResponseDocument.Factory.newInstance();
-                     ImportMarketDataResponse res = resDoc.addNewImportMarketDataResponse();
-                     res.setReturn(returnStr);
-
-                     return resDoc;
+                	 ImportMarketData data = importMarketData0.getImportMarketData();
+                     
+                	 String csvString = URLtoCSV
+                             .parseURL(data.getSec(), data.getStartDate(),
+                                     data.getEndDate(), data.getDataSourceURL());
+                	 
+                     System.out.println("getProperty = " + resourcesFolder);
+                     
+                     File directory = new File(resourcesFolder);
+                     
+                     Random rand = new Random();
+                     int  fileName = rand.nextInt(1000000) + 1;
+                     
+                     File outputFile = new File(resourcesFolder + "/" + fileName);
+                     while (outputFile.exists()) {
+                    	 fileName = rand.nextInt(1000000) + 1;
+                         outputFile = new File(resourcesFolder + "/" + fileName);
+                     }
+                     try {
+                         FileUtils.writeStringToFile(outputFile, csvString);
+                     } catch (IOException e) {
+                         // TODO Auto-generated catch block
+                         e.printStackTrace();
+                     }
+                     ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
+                     ImportMarketDataResponse resp = respDoc.addNewImportMarketDataResponse();
+                     resp.setEventSetId(Integer.toString(fileName));
+                     respDoc.setImportMarketDataResponse(resp);
+                     return respDoc;
         }
      
          
@@ -59,7 +83,22 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                   )
             throws ImportDownloadFaultException{
                 //TODO : fill this with the necessary business logic
-                throw new  java.lang.UnsupportedOperationException("Please implement " + this.getClass().getName() + "#downloadFile");
+                	 DownloadFile dfreq = downloadFile2.getDownloadFile();
+                     
+                     String returnStr = "EventSet Id: " + dfreq.getEventSetId();
+
+                     String url = resourcesFolder + "/" + returnStr;
+                     File f = new File(url);
+
+                     DownloadFileResponseDocument dfrespdoc = DownloadFileResponseDocument.Factory.newInstance();
+                     DownloadFileResponse dfresp = dfrespdoc.addNewDownloadFileResponse();
+                     if (f.exists()) {
+                         dfresp.setDataURL(url);
+                     } else {
+                         //does not exist
+                     }
+                      
+                     return dfrespdoc;
         }
      
     }
