@@ -17,6 +17,7 @@ import au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile;
 import au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse;
 import au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData;
 import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse;
+import au.edu.unsw.sltf.services.helper.MarketData;
     /**
      *  ImportDownloadServicesSkeleton java skeleton for the axisService
      */
@@ -36,16 +37,12 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                   au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData0
                   )
             throws ImportDownloadFaultException{
-                //TODO : fill this with the necessary business logic
                 	 ImportMarketData data = importMarketData0.getImportMarketData();
                      
-                	 String csvString = URLtoCSV
-                             .parseURL(data.getSec(), data.getStartDate(),
+                	 MarketData md = new MarketData(data.getSec(), data.getStartDate(),
                                      data.getEndDate(), data.getDataSourceURL());
                 	 
                      System.out.println("getProperty = " + resourcesFolder);
-                     
-                     File directory = new File(resourcesFolder);
                      
                      Random rand = new Random();
                      int  fileName = rand.nextInt(1000000) + 1;
@@ -56,7 +53,7 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                          outputFile = new File(resourcesFolder + "/" + fileName);
                      }
                      try {
-                         FileUtils.writeStringToFile(outputFile, csvString);
+                         FileUtils.writeStringToFile(outputFile, md.toCSVString());
                      } catch (IOException e) {
                          // TODO Auto-generated catch block
                          e.printStackTrace();
@@ -82,7 +79,6 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                   au.edu.unsw.sltf.services.DownloadFileDocument downloadFile2
                   )
             throws ImportDownloadFaultException{
-                //TODO : fill this with the necessary business logic
                 	 DownloadFile dfreq = downloadFile2.getDownloadFile();
                      
                      String returnStr = "EventSet Id: " + dfreq.getEventSetId();
@@ -95,7 +91,7 @@ import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDa
                      if (f.exists()) {
                          dfresp.setDataURL(url);
                      } else {
-                         //does not exist
+                         //TODO: does not exist
                      }
                       
                      return dfrespdoc;
