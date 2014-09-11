@@ -11,7 +11,7 @@ public class MarketData {
 		// TODO Auto-generated constructor stub
 	}
 
-	public MarketData(String sec, Calendar startDate, Calendar endDate,
+	public MarketData(String sec, Calendar start, Calendar end,
 			String dataSourceURL) {
 		// TODO Auto-generated constructor stub
 	}
