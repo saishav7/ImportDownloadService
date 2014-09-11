@@ -32,16 +32,13 @@ import au.edu.unsw.sltf.services.helper.MarketData;
          * @throws ImportDownloadFaultException 
          */
         
-                 public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
-                  (
-                  au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData0
-                  )
-            throws ImportDownloadFaultException{
+         public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
+          (
+          au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData0
+          )
+        		  throws ImportDownloadFaultException{
                 	 ImportMarketData data = importMarketData0.getImportMarketData();
                      
-                	 MarketData md = new MarketData(data.getSec(), data.getStartDate(),
-                                     data.getEndDate(), data.getDataSourceURL());
-                	 
                      System.out.println("getProperty = " + resourcesFolder);
                      
                      Random rand = new Random();
@@ -52,12 +49,17 @@ import au.edu.unsw.sltf.services.helper.MarketData;
                     	 fileName = rand.nextInt(1000000) + 1;
                          outputFile = new File(resourcesFolder + "/" + fileName);
                      }
+                     
+                     MarketData md = new MarketData(data.getSec(), data.getStartDate(),
+                             data.getEndDate(), data.getDataSourceURL());
+                     
                      try {
-                         FileUtils.writeStringToFile(outputFile, md.toCSVString());
-                     } catch (IOException e) {
-                         // TODO Auto-generated catch block
-                         e.printStackTrace();
-                     }
+        	             FileUtils.writeStringToFile(outputFile, md.stringify());
+        	         } catch (IOException e) {
+        	             // TODO Auto-generated catch block
+        	             e.printStackTrace();
+        	         }
+                     
                      ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
                      ImportMarketDataResponse resp = respDoc.addNewImportMarketDataResponse();
                      resp.setEventSetId(Integer.toString(fileName));
