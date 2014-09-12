@@ -15,9 +15,11 @@ import org.apache.commons.io.FileUtils;
 
 import au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile;
 import au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse;
+import au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault;
 import au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData;
 import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse;
 import au.edu.unsw.sltf.services.helper.MarketData;
+import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
     /**
      *  ImportDownloadServicesSkeleton java skeleton for the axisService
      */
@@ -36,35 +38,35 @@ import au.edu.unsw.sltf.services.helper.MarketData;
           (
           au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData0
           )
-        		  throws ImportDownloadFaultException{
-                	 ImportMarketData data = importMarketData0.getImportMarketData();
-                     
-                     System.out.println("getProperty = " + resourcesFolder);
-                     
-                     Random rand = new Random();
-                     int  fileName = rand.nextInt(1000000) + 1;
-                     
-                     File outputFile = new File(resourcesFolder + "/" + fileName);
-                     while (outputFile.exists()) {
-                    	 fileName = rand.nextInt(1000000) + 1;
-                         outputFile = new File(resourcesFolder + "/" + fileName);
-                     }
-                     
-                     MarketData md = new MarketData(data.getSec(), data.getStartDate(),
-                             data.getEndDate(), data.getDataSourceURL());
-                     
-                     try {
-        	             FileUtils.writeStringToFile(outputFile, md.stringify());
-        	         } catch (IOException e) {
-        	             // TODO Auto-generated catch block
-        	             e.printStackTrace();
-        	         }
-                     
-                     ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
-                     ImportMarketDataResponse resp = respDoc.addNewImportMarketDataResponse();
-                     resp.setEventSetId(Integer.toString(fileName));
-                     respDoc.setImportMarketDataResponse(resp);
-                     return respDoc;
+		  throws ImportDownloadFaultException{
+        	 ImportMarketData data = importMarketData0.getImportMarketData();
+             
+             System.out.println("getProperty = " + resourcesFolder);
+             
+             Random rand = new Random();
+             int  fileName = rand.nextInt(1000000) + 1;
+             
+             File outputFile = new File(resourcesFolder + "/" + fileName);
+             while (outputFile.exists()) {
+            	 fileName = rand.nextInt(1000000) + 1;
+                 outputFile = new File(resourcesFolder + "/" + fileName);
+             }
+             
+             MarketData md = new MarketData(data.getSec(), data.getStartDate(),
+                     data.getEndDate(), data.getDataSourceURL());
+             
+             try {
+	             FileUtils.writeStringToFile(outputFile, md.stringify());
+	         } catch (IOException e) {
+	        	 e.printStackTrace();
+	             throw idfaultException("Cannot write to file", "ProgramError")
+	         }
+             
+             ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
+             ImportMarketDataResponse resp = respDoc.addNewImportMarketDataResponse();
+             resp.setEventSetId(Integer.toString(fileName));
+             respDoc.setImportMarketDataResponse(resp);
+             return respDoc;
         }
      
          
@@ -76,28 +78,45 @@ import au.edu.unsw.sltf.services.helper.MarketData;
              * @throws ImportDownloadFaultException 
          */
         
-                 public au.edu.unsw.sltf.services.DownloadFileResponseDocument downloadFile
-                  (
-                  au.edu.unsw.sltf.services.DownloadFileDocument downloadFile2
-                  )
-            throws ImportDownloadFaultException{
-                	 DownloadFile dfreq = downloadFile2.getDownloadFile();
-                     
-                     String returnStr = "EventSet Id: " + dfreq.getEventSetId();
+         public au.edu.unsw.sltf.services.DownloadFileResponseDocument downloadFile
+          (
+          au.edu.unsw.sltf.services.DownloadFileDocument downloadFile2
+          )
+        throws ImportDownloadFaultException{
+            	 DownloadFile dfreq = downloadFile2.getDownloadFile();
+                 
+                 String returnStr = "EventSet Id: " + dfreq.getEventSetId();
 
-                     String url = resourcesFolder + "/" + returnStr;
-                     File f = new File(url);
+                 String url = resourcesFolder + "/" + returnStr;
+                 File f = new File(url);
 
-                     DownloadFileResponseDocument dfrespdoc = DownloadFileResponseDocument.Factory.newInstance();
+                 DownloadFileResponseDocument dfrespdoc;
+                 if (f.exists()) {
+                	 dfrespdoc = DownloadFileResponseDocument.Factory.newInstance();
                      DownloadFileResponse dfresp = dfrespdoc.addNewDownloadFileResponse();
-                     if (f.exists()) {
-                         dfresp.setDataURL(url);
-                     } else {
-                         //TODO: does not exist
-                     }
-                      
-                     return dfrespdoc;
+                     dfresp.setDataURL(url);
+                 } else {
+    	             throw idfaultException("Cannot find file!", "InvalidEventSetId");
+                 }
+                  
+                 return dfrespdoc;
         }
+
+
+		private ImportDownloadFaultException idfaultException(String faultMsg, String type) {
+            au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType = 
+           		 au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum.
+           		 forString(type);
+            ImportDownloadFault fault = ImportDownloadFault.Factory.newInstance();
+            fault.setFaultMessage(faultMsg);
+            fault.setFaultType(faultType);
+            ImportDownloadFaultDocument faultDoc = ImportDownloadFaultDocument.Factory.newInstance();
+            faultDoc.setImportDownloadFault(fault);
+            ImportDownloadFaultException ie = new ImportDownloadFaultException();
+            ie.setFaultMessage(faultDoc);
+            
+            return ie;
+		}
      
     }
     

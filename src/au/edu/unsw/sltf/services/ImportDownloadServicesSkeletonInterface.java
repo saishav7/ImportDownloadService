@@ -15,15 +15,15 @@
         /**
          * Auto generated method signature
          * 
-                                    * @param importMarketData
-             * @throws ImportDownloadFaultException : 
+         * @param importMarketData
+         * @throws ImportDownloadFaultException : 
          */
 
         
-                public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
-                (
-                  au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData
-                 )
+        public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
+        (
+          au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData
+         )
             throws ImportDownloadFaultException;
         
          
