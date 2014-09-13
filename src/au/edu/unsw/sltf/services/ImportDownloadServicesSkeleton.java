@@ -112,11 +112,10 @@ import au.edu.unsw.sltf.services.helper.MarketData;
                 	 dfrespdoc = DownloadFileResponseDocument.Factory.newInstance();
                      DownloadFileResponse dfresp = dfrespdoc.addNewDownloadFileResponse();
                      dfresp.setDataURL(url);
+                     return dfrespdoc;
                  } else {
     	             throw idFaultException("Cannot find file!", "InvalidEventSetId");
                  }
-                  
-                 return dfrespdoc;
         }
 
 
