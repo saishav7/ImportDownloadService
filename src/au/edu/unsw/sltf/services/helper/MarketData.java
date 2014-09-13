@@ -3,8 +3,10 @@ package au.edu.unsw.sltf.services.helper;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,6 +15,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+
+import com.sun.tools.xjc.reader.xmlschema.parser.IncorrectNamespaceURIChecker;
 
 public class MarketData {
 	private int index;
@@ -50,7 +54,7 @@ public class MarketData {
 	}
 	
 	public MarketData(String sec2, Calendar startDate, Calendar endDate,
-			String dataSourceURL) {
+			String dataSourceURL) throws IOException, IncorrectTimeException {
 		this.sec = sec2;
 		this.startTime = startDate;
 		this.endTime = endDate;
@@ -62,8 +66,7 @@ public class MarketData {
 		return md;
 	}
 
-	private void URLtoMD(String dataSourceURL) {
-        try {
+	private void URLtoMD(String dataSourceURL) throws IOException, IncorrectTimeException {
         	URL dataURL = new URL(dataSourceURL);
 	        
 	        InputStream is = dataURL.openStream();
@@ -73,7 +76,7 @@ public class MarketData {
 	        String result = "";
 	
 	        if (endTime.before(startTime)) {
-	            //TODO
+	            throw new IncorrectTimeException();
 	        }
 	        // Read in the lines
 	        while ((theLine = br.readLine()) != null) {
@@ -94,9 +97,6 @@ public class MarketData {
 	        }
 	        
 	        csvString = result;
-        } catch (Exception e) {
-        	//TODO
-        }
 	}
 
 	private Calendar getDateFromArray(String[] lineArray) {

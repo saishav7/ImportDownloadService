@@ -12,14 +12,15 @@ import java.io.IOException;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
+import org.jaxen.function.IdFunction;
 
 import au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile;
 import au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse;
 import au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault;
 import au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData;
 import au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse;
+import au.edu.unsw.sltf.services.helper.IncorrectTimeException;
 import au.edu.unsw.sltf.services.helper.MarketData;
-import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
     /**
      *  ImportDownloadServicesSkeleton java skeleton for the axisService
      */
@@ -52,14 +53,27 @@ import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
                  outputFile = new File(resourcesFolder + "/" + fileName);
              }
              
-             MarketData md = new MarketData(data.getSec(), data.getStartDate(),
-                     data.getEndDate(), data.getDataSourceURL());
+             MarketData md;
+			try {
+				if (!data.getSec().matches("^[A-Za-z]{3}")) {
+					throw idFaultException("Incorrect Sec code", "InvalidSECCode");
+				} else {
+					md = new MarketData(data.getSec(), data.getStartDate(),
+					         data.getEndDate(), data.getDataSourceURL());
+				}
+			} catch (IOException e1) {
+				e1.printStackTrace();
+				throw idFaultException("URL cannot be used", "InvalidURL");
+			} catch (IncorrectTimeException ite) {
+				ite.printStackTrace();
+				throw idFaultException("Incorrect times", "ProgramError");
+			}
              
              try {
 	             FileUtils.writeStringToFile(outputFile, md.stringify());
 	         } catch (IOException e) {
 	        	 e.printStackTrace();
-	             throw idfaultException("Cannot write to file", "ProgramError");
+	             throw idFaultException("Cannot write to file", "ProgramError");
 	         }
              
              ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
@@ -73,16 +87,16 @@ import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
         /**
          * Auto generated method signature
          * 
-                                     * @param downloadFile2 
-             * @return downloadFileResponse3 
-             * @throws ImportDownloadFaultException 
+         * @param downloadFile2 
+         * @return downloadFileResponse3 
+         * @throws ImportDownloadFaultException 
          */
         
          public au.edu.unsw.sltf.services.DownloadFileResponseDocument downloadFile
           (
           au.edu.unsw.sltf.services.DownloadFileDocument downloadFile2
           )
-        throws ImportDownloadFaultException{
+        	throws ImportDownloadFaultException{
             	 DownloadFile dfreq = downloadFile2.getDownloadFile();
                  
                  String returnStr = "EventSet Id: " + dfreq.getEventSetId();
@@ -96,14 +110,14 @@ import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
                      DownloadFileResponse dfresp = dfrespdoc.addNewDownloadFileResponse();
                      dfresp.setDataURL(url);
                  } else {
-    	             throw idfaultException("Cannot find file!", "InvalidEventSetId");
+    	             throw idFaultException("Cannot find file!", "InvalidEventSetId");
                  }
                   
                  return dfrespdoc;
         }
 
 
-		private ImportDownloadFaultException idfaultException(String faultMsg, String type) {
+		private ImportDownloadFaultException idFaultException(String faultMsg, String type) {
             au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType = 
            		 au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum.
            		 forString(type);
