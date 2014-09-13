@@ -66,7 +66,7 @@ public class MarketData {
 		return md;
 	}
 
-	private void URLtoMD(String dataSourceURL) throws IOException, IncorrectTimeException {
+	private void URLtoMD(String dataSourceURL) throws IOException, IncorrectTimeException, ParseException {
         	URL dataURL = new URL(dataSourceURL);
 	        
 	        InputStream is = dataURL.openStream();
@@ -99,7 +99,7 @@ public class MarketData {
 	        csvString = result;
 	}
 
-	private Calendar getDateFromArray(String[] lineArray) {
+	private Calendar getDateFromArray(String[] lineArray) throws ParseException {
 		Calendar c = convertDate(lineArray[1]);
 		convertTime(lineArray[2], c);
 		return c;
@@ -262,14 +262,9 @@ public class MarketData {
         scanner.close();
 	}
 	
-	private Calendar convertDate(String date) {
+	private Calendar convertDate(String date) throws ParseException {
 		Date d = null;
-        try {
-        	d = new SimpleDateFormat("dd/mm/yyyy").parse(date);
-        } catch(ParseException e) {
-        	//TODO
-        	//throw new ImportDownloadFaultException("Invalid start date");
-        }
+    	d = new SimpleDateFormat("dd/mm/yyyy").parse(date);
         Calendar c = Calendar.getInstance();
         c.setTime(d);
         

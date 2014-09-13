@@ -9,6 +9,7 @@
 
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
@@ -54,22 +55,24 @@ import au.edu.unsw.sltf.services.helper.MarketData;
              }
              
              MarketData md;
-			try {
+			
 				if (!data.getSec().matches("^[A-Za-z]{3}")) {
-					throw idFaultException("Incorrect Sec code", "InvalidSECCode");
+					throw idFaultException("Incorrect SEC code", "InvalidSECCode");
 				} else {
-					md = new MarketData(data.getSec(), data.getStartDate(),
+					
+					try {
+						md = new MarketData(data.getSec(), data.getStartDate(),
 					         data.getEndDate(), data.getDataSourceURL());
+					} catch (IOException e1) {
+						e1.printStackTrace();
+						throw idFaultException("URL cannot be used", "InvalidURL");
+					} catch (IncorrectTimeException ite) {
+						ite.printStackTrace();
+						throw idFaultException("Incorrect times", "ProgramError");
+					}
 				}
-			} catch (IOException e1) {
-				e1.printStackTrace();
-				throw idFaultException("URL cannot be used", "InvalidURL");
-			} catch (IncorrectTimeException ite) {
-				ite.printStackTrace();
-				throw idFaultException("Incorrect times", "ProgramError");
-			}
-             
-             try {
+
+				try {
 	             FileUtils.writeStringToFile(outputFile, md.stringify());
 	         } catch (IOException e) {
 	        	 e.printStackTrace();
