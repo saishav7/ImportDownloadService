@@ -107,9 +107,9 @@ import au.edu.unsw.sltf.services.helper.MarketData;
                  String url = resourcesFolder + "/" + returnStr;
                  File f = new File(url);
 
-                 DownloadFileResponseDocument dfrespdoc;
                  if (f.exists()) {
-                	 dfrespdoc = DownloadFileResponseDocument.Factory.newInstance();
+                	 DownloadFileResponseDocument dfrespdoc = 
+                			 DownloadFileResponseDocument.Factory.newInstance();
                      DownloadFileResponse dfresp = dfrespdoc.addNewDownloadFileResponse();
                      dfresp.setDataURL(url);
                      return dfrespdoc;
