@@ -27,7 +27,8 @@ public class QNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "QName" element
      */
-    public org.xmlsoap.schemas.soap.encoding.QName getQName()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.QName getQName()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class QNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "QName" element
      */
-    public void setQName(org.xmlsoap.schemas.soap.encoding.QName qName)
+    @Override
+	public void setQName(org.xmlsoap.schemas.soap.encoding.QName qName)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class QNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "QName" element
      */
-    public org.xmlsoap.schemas.soap.encoding.QName addNewQName()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.QName addNewQName()
     {
         synchronized (monitor())
         {

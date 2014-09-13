@@ -27,7 +27,8 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "ENTITIES" element
      */
-    public org.xmlsoap.schemas.soap.encoding.ENTITIES getENTITIES()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ENTITIES getENTITIES()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "ENTITIES" element
      */
-    public void setENTITIES(org.xmlsoap.schemas.soap.encoding.ENTITIES entities)
+    @Override
+	public void setENTITIES(org.xmlsoap.schemas.soap.encoding.ENTITIES entities)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "ENTITIES" element
      */
-    public org.xmlsoap.schemas.soap.encoding.ENTITIES addNewENTITIES()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ENTITIES addNewENTITIES()
     {
         synchronized (monitor())
         {

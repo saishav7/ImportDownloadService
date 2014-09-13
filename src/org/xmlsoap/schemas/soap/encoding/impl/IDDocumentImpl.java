@@ -27,7 +27,8 @@ public class IDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Gets the "ID" element
      */
-    public org.xmlsoap.schemas.soap.encoding.ID getID()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ID getID()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class IDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Sets the "ID" element
      */
-    public void setID(org.xmlsoap.schemas.soap.encoding.ID id)
+    @Override
+	public void setID(org.xmlsoap.schemas.soap.encoding.ID id)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class IDDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexCo
     /**
      * Appends and returns a new empty "ID" element
      */
-    public org.xmlsoap.schemas.soap.encoding.ID addNewID()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ID addNewID()
     {
         synchronized (monitor())
         {

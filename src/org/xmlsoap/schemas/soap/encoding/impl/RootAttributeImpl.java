@@ -27,7 +27,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "root" attribute
      */
-    public boolean getRoot()
+    @Override
+	public boolean getRoot()
     {
         synchronized (monitor())
         {
@@ -49,7 +50,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets (as xml) the "root" attribute
      */
-    public org.xmlsoap.schemas.soap.encoding.RootAttribute.Root xgetRoot()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.RootAttribute.Root xgetRoot()
     {
         synchronized (monitor())
         {
@@ -67,7 +69,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * True if has "root" attribute
      */
-    public boolean isSetRoot()
+    @Override
+	public boolean isSetRoot()
     {
         synchronized (monitor())
         {
@@ -79,7 +82,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "root" attribute
      */
-    public void setRoot(boolean root)
+    @Override
+	public void setRoot(boolean root)
     {
         synchronized (monitor())
         {
@@ -97,7 +101,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets (as xml) the "root" attribute
      */
-    public void xsetRoot(org.xmlsoap.schemas.soap.encoding.RootAttribute.Root root)
+    @Override
+	public void xsetRoot(org.xmlsoap.schemas.soap.encoding.RootAttribute.Root root)
     {
         synchronized (monitor())
         {
@@ -115,7 +120,8 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Unsets the "root" attribute
      */
-    public void unsetRoot()
+    @Override
+	public void unsetRoot()
     {
         synchronized (monitor())
         {

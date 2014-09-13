@@ -27,7 +27,8 @@ public class LanguageDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "language" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Language getLanguage()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Language getLanguage()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class LanguageDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "language" element
      */
-    public void setLanguage(org.xmlsoap.schemas.soap.encoding.Language language)
+    @Override
+	public void setLanguage(org.xmlsoap.schemas.soap.encoding.Language language)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class LanguageDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "language" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Language addNewLanguage()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Language addNewLanguage()
     {
         synchronized (monitor())
         {

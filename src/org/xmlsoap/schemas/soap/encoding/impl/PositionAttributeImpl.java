@@ -27,7 +27,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets the "position" attribute
      */
-    public java.lang.String getPosition()
+    @Override
+	public java.lang.String getPosition()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets (as xml) the "position" attribute
      */
-    public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetPosition()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetPosition()
     {
         synchronized (monitor())
         {
@@ -59,7 +61,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * True if has "position" attribute
      */
-    public boolean isSetPosition()
+    @Override
+	public boolean isSetPosition()
     {
         synchronized (monitor())
         {
@@ -71,7 +74,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "position" attribute
      */
-    public void setPosition(java.lang.String position)
+    @Override
+	public void setPosition(java.lang.String position)
     {
         synchronized (monitor())
         {
@@ -89,7 +93,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets (as xml) the "position" attribute
      */
-    public void xsetPosition(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate position)
+    @Override
+	public void xsetPosition(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate position)
     {
         synchronized (monitor())
         {
@@ -107,7 +112,8 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Unsets the "position" attribute
      */
-    public void unsetPosition()
+    @Override
+	public void unsetPosition()
     {
         synchronized (monitor())
         {

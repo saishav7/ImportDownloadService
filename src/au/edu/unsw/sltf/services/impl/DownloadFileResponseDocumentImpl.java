@@ -27,7 +27,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Gets the "downloadFileResponse" element
      */
-    public au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse getDownloadFileResponse()
+    @Override
+	public au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse getDownloadFileResponse()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Sets the "downloadFileResponse" element
      */
-    public void setDownloadFileResponse(au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse downloadFileResponse)
+    @Override
+	public void setDownloadFileResponse(au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse downloadFileResponse)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
     /**
      * Appends and returns a new empty "downloadFileResponse" element
      */
-    public au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse addNewDownloadFileResponse()
+    @Override
+	public au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse addNewDownloadFileResponse()
     {
         synchronized (monitor())
         {
@@ -93,7 +96,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Gets the "dataURL" element
          */
-        public java.lang.String getDataURL()
+        @Override
+		public java.lang.String getDataURL()
         {
             synchronized (monitor())
             {
@@ -111,7 +115,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Gets (as xml) the "dataURL" element
          */
-        public org.apache.xmlbeans.XmlAnyURI xgetDataURL()
+        @Override
+		public org.apache.xmlbeans.XmlAnyURI xgetDataURL()
         {
             synchronized (monitor())
             {
@@ -125,7 +130,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets the "dataURL" element
          */
-        public void setDataURL(java.lang.String dataURL)
+        @Override
+		public void setDataURL(java.lang.String dataURL)
         {
             synchronized (monitor())
             {
@@ -143,7 +149,8 @@ public class DownloadFileResponseDocumentImpl extends org.apache.xmlbeans.impl.v
         /**
          * Sets (as xml) the "dataURL" element
          */
-        public void xsetDataURL(org.apache.xmlbeans.XmlAnyURI dataURL)
+        @Override
+		public void xsetDataURL(org.apache.xmlbeans.XmlAnyURI dataURL)
         {
             synchronized (monitor())
             {

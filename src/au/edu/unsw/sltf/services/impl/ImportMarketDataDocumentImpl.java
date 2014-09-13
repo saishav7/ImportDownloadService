@@ -27,7 +27,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Gets the "importMarketData" element
      */
-    public au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData getImportMarketData()
+    @Override
+	public au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData getImportMarketData()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "importMarketData" element
      */
-    public void setImportMarketData(au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData importMarketData)
+    @Override
+	public void setImportMarketData(au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData importMarketData)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Appends and returns a new empty "importMarketData" element
      */
-    public au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData addNewImportMarketData()
+    @Override
+	public au.edu.unsw.sltf.services.ImportMarketDataDocument.ImportMarketData addNewImportMarketData()
     {
         synchronized (monitor())
         {
@@ -99,7 +102,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets the "sec" element
          */
-        public java.lang.String getSec()
+        @Override
+		public java.lang.String getSec()
         {
             synchronized (monitor())
             {
@@ -117,7 +121,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets (as xml) the "sec" element
          */
-        public org.apache.xmlbeans.XmlString xgetSec()
+        @Override
+		public org.apache.xmlbeans.XmlString xgetSec()
         {
             synchronized (monitor())
             {
@@ -131,7 +136,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "sec" element
          */
-        public void setSec(java.lang.String sec)
+        @Override
+		public void setSec(java.lang.String sec)
         {
             synchronized (monitor())
             {
@@ -149,7 +155,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets (as xml) the "sec" element
          */
-        public void xsetSec(org.apache.xmlbeans.XmlString sec)
+        @Override
+		public void xsetSec(org.apache.xmlbeans.XmlString sec)
         {
             synchronized (monitor())
             {
@@ -167,7 +174,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets the "startDate" element
          */
-        public java.util.Calendar getStartDate()
+        @Override
+		public java.util.Calendar getStartDate()
         {
             synchronized (monitor())
             {
@@ -185,7 +193,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets (as xml) the "startDate" element
          */
-        public org.apache.xmlbeans.XmlDateTime xgetStartDate()
+        @Override
+		public org.apache.xmlbeans.XmlDateTime xgetStartDate()
         {
             synchronized (monitor())
             {
@@ -199,7 +208,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "startDate" element
          */
-        public void setStartDate(java.util.Calendar startDate)
+        @Override
+		public void setStartDate(java.util.Calendar startDate)
         {
             synchronized (monitor())
             {
@@ -217,7 +227,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets (as xml) the "startDate" element
          */
-        public void xsetStartDate(org.apache.xmlbeans.XmlDateTime startDate)
+        @Override
+		public void xsetStartDate(org.apache.xmlbeans.XmlDateTime startDate)
         {
             synchronized (monitor())
             {
@@ -235,7 +246,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets the "endDate" element
          */
-        public java.util.Calendar getEndDate()
+        @Override
+		public java.util.Calendar getEndDate()
         {
             synchronized (monitor())
             {
@@ -253,7 +265,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets (as xml) the "endDate" element
          */
-        public org.apache.xmlbeans.XmlDateTime xgetEndDate()
+        @Override
+		public org.apache.xmlbeans.XmlDateTime xgetEndDate()
         {
             synchronized (monitor())
             {
@@ -267,7 +280,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "endDate" element
          */
-        public void setEndDate(java.util.Calendar endDate)
+        @Override
+		public void setEndDate(java.util.Calendar endDate)
         {
             synchronized (monitor())
             {
@@ -285,7 +299,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets (as xml) the "endDate" element
          */
-        public void xsetEndDate(org.apache.xmlbeans.XmlDateTime endDate)
+        @Override
+		public void xsetEndDate(org.apache.xmlbeans.XmlDateTime endDate)
         {
             synchronized (monitor())
             {
@@ -303,7 +318,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets the "dataSourceURL" element
          */
-        public java.lang.String getDataSourceURL()
+        @Override
+		public java.lang.String getDataSourceURL()
         {
             synchronized (monitor())
             {
@@ -321,7 +337,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Gets (as xml) the "dataSourceURL" element
          */
-        public org.apache.xmlbeans.XmlAnyURI xgetDataSourceURL()
+        @Override
+		public org.apache.xmlbeans.XmlAnyURI xgetDataSourceURL()
         {
             synchronized (monitor())
             {
@@ -335,7 +352,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets the "dataSourceURL" element
          */
-        public void setDataSourceURL(java.lang.String dataSourceURL)
+        @Override
+		public void setDataSourceURL(java.lang.String dataSourceURL)
         {
             synchronized (monitor())
             {
@@ -353,7 +371,8 @@ public class ImportMarketDataDocumentImpl extends org.apache.xmlbeans.impl.value
         /**
          * Sets (as xml) the "dataSourceURL" element
          */
-        public void xsetDataSourceURL(org.apache.xmlbeans.XmlAnyURI dataSourceURL)
+        @Override
+		public void xsetDataSourceURL(org.apache.xmlbeans.XmlAnyURI dataSourceURL)
         {
             synchronized (monitor())
             {

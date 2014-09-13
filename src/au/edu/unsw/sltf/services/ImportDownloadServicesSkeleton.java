@@ -13,8 +13,6 @@ import java.text.ParseException;
 import java.util.Random;
 
 import org.apache.commons.io.FileUtils;
-import org.jaxen.function.IdFunction;
-
 import au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile;
 import au.edu.unsw.sltf.services.DownloadFileResponseDocument.DownloadFileResponse;
 import au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault;
@@ -36,7 +34,8 @@ import au.edu.unsw.sltf.services.helper.MarketData;
          * @throws ImportDownloadFaultException 
          */
         
-         public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
+         @Override
+		public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
           (
           au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData0
           )
@@ -69,6 +68,9 @@ import au.edu.unsw.sltf.services.helper.MarketData;
 					} catch (IncorrectTimeException ite) {
 						ite.printStackTrace();
 						throw idFaultException("Incorrect times", "ProgramError");
+					} catch (ParseException e) {
+						e.printStackTrace();
+						throw idFaultException("Incorrect times", "ProgramError");
 					}
 				}
 
@@ -95,7 +97,8 @@ import au.edu.unsw.sltf.services.helper.MarketData;
          * @throws ImportDownloadFaultException 
          */
         
-         public au.edu.unsw.sltf.services.DownloadFileResponseDocument downloadFile
+         @Override
+		public au.edu.unsw.sltf.services.DownloadFileResponseDocument downloadFile
           (
           au.edu.unsw.sltf.services.DownloadFileDocument downloadFile2
           )

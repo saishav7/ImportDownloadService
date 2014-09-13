@@ -27,7 +27,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Gets the "importMarketDataResponse" element
      */
-    public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse getImportMarketDataResponse()
+    @Override
+	public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse getImportMarketDataResponse()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "importMarketDataResponse" element
      */
-    public void setImportMarketDataResponse(au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse importMarketDataResponse)
+    @Override
+	public void setImportMarketDataResponse(au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse importMarketDataResponse)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Appends and returns a new empty "importMarketDataResponse" element
      */
-    public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse addNewImportMarketDataResponse()
+    @Override
+	public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse addNewImportMarketDataResponse()
     {
         synchronized (monitor())
         {
@@ -93,7 +96,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Gets the "eventSetId" element
          */
-        public java.lang.String getEventSetId()
+        @Override
+		public java.lang.String getEventSetId()
         {
             synchronized (monitor())
             {
@@ -111,7 +115,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Gets (as xml) the "eventSetId" element
          */
-        public org.apache.xmlbeans.XmlString xgetEventSetId()
+        @Override
+		public org.apache.xmlbeans.XmlString xgetEventSetId()
         {
             synchronized (monitor())
             {
@@ -125,7 +130,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "eventSetId" element
          */
-        public void setEventSetId(java.lang.String eventSetId)
+        @Override
+		public void setEventSetId(java.lang.String eventSetId)
         {
             synchronized (monitor())
             {
@@ -143,7 +149,8 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets (as xml) the "eventSetId" element
          */
-        public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
+        @Override
+		public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
         {
             synchronized (monitor())
             {

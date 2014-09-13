@@ -27,7 +27,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Gets the "importDownloadFault" element
      */
-    public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault getImportDownloadFault()
+    @Override
+	public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault getImportDownloadFault()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "importDownloadFault" element
      */
-    public void setImportDownloadFault(au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault importDownloadFault)
+    @Override
+	public void setImportDownloadFault(au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault importDownloadFault)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Appends and returns a new empty "importDownloadFault" element
      */
-    public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault addNewImportDownloadFault()
+    @Override
+	public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault addNewImportDownloadFault()
     {
         synchronized (monitor())
         {
@@ -95,7 +98,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets the "faultType" element
          */
-        public au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum getFaultType()
+        @Override
+		public au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum getFaultType()
         {
             synchronized (monitor())
             {
@@ -113,7 +117,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets (as xml) the "faultType" element
          */
-        public au.edu.unsw.sltf.services.ImportDownloadFaultType xgetFaultType()
+        @Override
+		public au.edu.unsw.sltf.services.ImportDownloadFaultType xgetFaultType()
         {
             synchronized (monitor())
             {
@@ -127,7 +132,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "faultType" element
          */
-        public void setFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType)
+        @Override
+		public void setFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType)
         {
             synchronized (monitor())
             {
@@ -145,7 +151,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets (as xml) the "faultType" element
          */
-        public void xsetFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType faultType)
+        @Override
+		public void xsetFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType faultType)
         {
             synchronized (monitor())
             {
@@ -163,7 +170,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets the "faultMessage" element
          */
-        public java.lang.String getFaultMessage()
+        @Override
+		public java.lang.String getFaultMessage()
         {
             synchronized (monitor())
             {
@@ -181,7 +189,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets (as xml) the "faultMessage" element
          */
-        public org.apache.xmlbeans.XmlString xgetFaultMessage()
+        @Override
+		public org.apache.xmlbeans.XmlString xgetFaultMessage()
         {
             synchronized (monitor())
             {
@@ -195,7 +204,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "faultMessage" element
          */
-        public void setFaultMessage(java.lang.String faultMessage)
+        @Override
+		public void setFaultMessage(java.lang.String faultMessage)
         {
             synchronized (monitor())
             {
@@ -213,7 +223,8 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets (as xml) the "faultMessage" element
          */
-        public void xsetFaultMessage(org.apache.xmlbeans.XmlString faultMessage)
+        @Override
+		public void xsetFaultMessage(org.apache.xmlbeans.XmlString faultMessage)
         {
             synchronized (monitor())
             {

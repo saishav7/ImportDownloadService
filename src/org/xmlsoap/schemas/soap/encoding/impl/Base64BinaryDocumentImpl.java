@@ -27,7 +27,8 @@ public class Base64BinaryDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "base64Binary" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Base64Binary getBase64Binary()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Base64Binary getBase64Binary()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class Base64BinaryDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "base64Binary" element
      */
-    public void setBase64Binary(org.xmlsoap.schemas.soap.encoding.Base64Binary base64Binary)
+    @Override
+	public void setBase64Binary(org.xmlsoap.schemas.soap.encoding.Base64Binary base64Binary)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class Base64BinaryDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Appends and returns a new empty "base64Binary" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Base64Binary addNewBase64Binary()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Base64Binary addNewBase64Binary()
     {
         synchronized (monitor())
         {

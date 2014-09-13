@@ -27,7 +27,8 @@ public class StringDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "string" element
      */
-    public org.xmlsoap.schemas.soap.encoding.String getString()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.String getString()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class StringDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "string" element
      */
-    public void setString(org.xmlsoap.schemas.soap.encoding.String string)
+    @Override
+	public void setString(org.xmlsoap.schemas.soap.encoding.String string)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class StringDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "string" element
      */
-    public org.xmlsoap.schemas.soap.encoding.String addNewString()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.String addNewString()
     {
         synchronized (monitor())
         {

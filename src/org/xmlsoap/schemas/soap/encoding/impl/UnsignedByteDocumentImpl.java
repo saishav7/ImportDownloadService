@@ -27,7 +27,8 @@ public class UnsignedByteDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "unsignedByte" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedByte getUnsignedByte()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedByte getUnsignedByte()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class UnsignedByteDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "unsignedByte" element
      */
-    public void setUnsignedByte(org.xmlsoap.schemas.soap.encoding.UnsignedByte unsignedByte)
+    @Override
+	public void setUnsignedByte(org.xmlsoap.schemas.soap.encoding.UnsignedByte unsignedByte)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class UnsignedByteDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Appends and returns a new empty "unsignedByte" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedByte addNewUnsignedByte()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedByte addNewUnsignedByte()
     {
         synchronized (monitor())
         {

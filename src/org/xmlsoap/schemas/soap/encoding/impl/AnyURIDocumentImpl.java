@@ -27,7 +27,8 @@ public class AnyURIDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "anyURI" element
      */
-    public org.xmlsoap.schemas.soap.encoding.AnyURI getAnyURI()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.AnyURI getAnyURI()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class AnyURIDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "anyURI" element
      */
-    public void setAnyURI(org.xmlsoap.schemas.soap.encoding.AnyURI anyURI)
+    @Override
+	public void setAnyURI(org.xmlsoap.schemas.soap.encoding.AnyURI anyURI)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class AnyURIDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "anyURI" element
      */
-    public org.xmlsoap.schemas.soap.encoding.AnyURI addNewAnyURI()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.AnyURI addNewAnyURI()
     {
         synchronized (monitor())
         {

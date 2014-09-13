@@ -27,7 +27,8 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "unsignedLong" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedLong getUnsignedLong()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedLong getUnsignedLong()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "unsignedLong" element
      */
-    public void setUnsignedLong(org.xmlsoap.schemas.soap.encoding.UnsignedLong unsignedLong)
+    @Override
+	public void setUnsignedLong(org.xmlsoap.schemas.soap.encoding.UnsignedLong unsignedLong)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Appends and returns a new empty "unsignedLong" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedLong addNewUnsignedLong()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedLong addNewUnsignedLong()
     {
         synchronized (monitor())
         {

@@ -27,7 +27,8 @@ public class IDREFDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "IDREF" element
      */
-    public org.xmlsoap.schemas.soap.encoding.IDREF getIDREF()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.IDREF getIDREF()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class IDREFDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "IDREF" element
      */
-    public void setIDREF(org.xmlsoap.schemas.soap.encoding.IDREF idref)
+    @Override
+	public void setIDREF(org.xmlsoap.schemas.soap.encoding.IDREF idref)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class IDREFDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "IDREF" element
      */
-    public org.xmlsoap.schemas.soap.encoding.IDREF addNewIDREF()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.IDREF addNewIDREF()
     {
         synchronized (monitor())
         {

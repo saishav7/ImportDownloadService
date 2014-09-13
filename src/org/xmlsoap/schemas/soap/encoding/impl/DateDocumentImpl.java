@@ -27,7 +27,8 @@ public class DateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "date" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Date getDate()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Date getDate()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class DateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "date" element
      */
-    public void setDate(org.xmlsoap.schemas.soap.encoding.Date date)
+    @Override
+	public void setDate(org.xmlsoap.schemas.soap.encoding.Date date)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class DateDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "date" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Date addNewDate()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Date addNewDate()
     {
         synchronized (monitor())
         {

@@ -27,7 +27,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "offset" attribute
      */
-    public java.lang.String getOffset()
+    @Override
+	public java.lang.String getOffset()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets (as xml) the "offset" attribute
      */
-    public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
     {
         synchronized (monitor())
         {
@@ -59,7 +61,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * True if has "offset" attribute
      */
-    public boolean isSetOffset()
+    @Override
+	public boolean isSetOffset()
     {
         synchronized (monitor())
         {
@@ -71,7 +74,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "offset" attribute
      */
-    public void setOffset(java.lang.String offset)
+    @Override
+	public void setOffset(java.lang.String offset)
     {
         synchronized (monitor())
         {
@@ -89,7 +93,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets (as xml) the "offset" attribute
      */
-    public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
+    @Override
+	public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
     {
         synchronized (monitor())
         {
@@ -107,7 +112,8 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Unsets the "offset" attribute
      */
-    public void unsetOffset()
+    @Override
+	public void unsetOffset()
     {
         synchronized (monitor())
         {

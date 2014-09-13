@@ -27,7 +27,8 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets the "hexBinary" element
      */
-    public org.xmlsoap.schemas.soap.encoding.HexBinary getHexBinary()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.HexBinary getHexBinary()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "hexBinary" element
      */
-    public void setHexBinary(org.xmlsoap.schemas.soap.encoding.HexBinary hexBinary)
+    @Override
+	public void setHexBinary(org.xmlsoap.schemas.soap.encoding.HexBinary hexBinary)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Appends and returns a new empty "hexBinary" element
      */
-    public org.xmlsoap.schemas.soap.encoding.HexBinary addNewHexBinary()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.HexBinary addNewHexBinary()
     {
         synchronized (monitor())
         {

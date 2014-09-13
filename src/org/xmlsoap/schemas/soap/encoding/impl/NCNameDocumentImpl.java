@@ -27,7 +27,8 @@ public class NCNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "NCName" element
      */
-    public org.xmlsoap.schemas.soap.encoding.NCName getNCName()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.NCName getNCName()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class NCNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "NCName" element
      */
-    public void setNCName(org.xmlsoap.schemas.soap.encoding.NCName ncName)
+    @Override
+	public void setNCName(org.xmlsoap.schemas.soap.encoding.NCName ncName)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class NCNameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "NCName" element
      */
-    public org.xmlsoap.schemas.soap.encoding.NCName addNewNCName()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.NCName addNewNCName()
     {
         synchronized (monitor())
         {

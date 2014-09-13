@@ -27,7 +27,8 @@ public class NegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Gets the "negativeInteger" element
      */
-    public org.xmlsoap.schemas.soap.encoding.NegativeInteger getNegativeInteger()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.NegativeInteger getNegativeInteger()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class NegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "negativeInteger" element
      */
-    public void setNegativeInteger(org.xmlsoap.schemas.soap.encoding.NegativeInteger negativeInteger)
+    @Override
+	public void setNegativeInteger(org.xmlsoap.schemas.soap.encoding.NegativeInteger negativeInteger)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class NegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Appends and returns a new empty "negativeInteger" element
      */
-    public org.xmlsoap.schemas.soap.encoding.NegativeInteger addNewNegativeInteger()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.NegativeInteger addNewNegativeInteger()
     {
         synchronized (monitor())
         {

@@ -27,7 +27,8 @@ public class FloatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "float" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Float getFloat()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Float getFloat()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class FloatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "float" element
      */
-    public void setFloat(org.xmlsoap.schemas.soap.encoding.Float xfloat)
+    @Override
+	public void setFloat(org.xmlsoap.schemas.soap.encoding.Float xfloat)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class FloatDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "float" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Float addNewFloat()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Float addNewFloat()
     {
         synchronized (monitor())
         {

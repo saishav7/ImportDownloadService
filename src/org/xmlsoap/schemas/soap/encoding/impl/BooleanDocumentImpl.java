@@ -27,7 +27,8 @@ public class BooleanDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "boolean" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Boolean getBoolean()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Boolean getBoolean()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class BooleanDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "boolean" element
      */
-    public void setBoolean(org.xmlsoap.schemas.soap.encoding.Boolean xboolean)
+    @Override
+	public void setBoolean(org.xmlsoap.schemas.soap.encoding.Boolean xboolean)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class BooleanDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Appends and returns a new empty "boolean" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Boolean addNewBoolean()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Boolean addNewBoolean()
     {
         synchronized (monitor())
         {

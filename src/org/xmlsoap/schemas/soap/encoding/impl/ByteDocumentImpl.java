@@ -27,7 +27,8 @@ public class ByteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "byte" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Byte getByte()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Byte getByte()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ByteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "byte" element
      */
-    public void setByte(org.xmlsoap.schemas.soap.encoding.Byte xbyte)
+    @Override
+	public void setByte(org.xmlsoap.schemas.soap.encoding.Byte xbyte)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class ByteDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "byte" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Byte addNewByte()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Byte addNewByte()
     {
         synchronized (monitor())
         {

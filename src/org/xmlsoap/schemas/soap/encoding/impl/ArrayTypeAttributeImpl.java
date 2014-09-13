@@ -27,7 +27,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Gets the "arrayType" attribute
      */
-    public java.lang.String getArrayType()
+    @Override
+	public java.lang.String getArrayType()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Gets (as xml) the "arrayType" attribute
      */
-    public org.apache.xmlbeans.XmlString xgetArrayType()
+    @Override
+	public org.apache.xmlbeans.XmlString xgetArrayType()
     {
         synchronized (monitor())
         {
@@ -59,7 +61,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * True if has "arrayType" attribute
      */
-    public boolean isSetArrayType()
+    @Override
+	public boolean isSetArrayType()
     {
         synchronized (monitor())
         {
@@ -71,7 +74,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "arrayType" attribute
      */
-    public void setArrayType(java.lang.String arrayType)
+    @Override
+	public void setArrayType(java.lang.String arrayType)
     {
         synchronized (monitor())
         {
@@ -89,7 +93,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets (as xml) the "arrayType" attribute
      */
-    public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
+    @Override
+	public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
     {
         synchronized (monitor())
         {
@@ -107,7 +112,8 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Unsets the "arrayType" attribute
      */
-    public void unsetArrayType()
+    @Override
+	public void unsetArrayType()
     {
         synchronized (monitor())
         {

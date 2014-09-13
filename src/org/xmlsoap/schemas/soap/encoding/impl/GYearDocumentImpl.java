@@ -27,7 +27,8 @@ public class GYearDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "gYear" element
      */
-    public org.xmlsoap.schemas.soap.encoding.GYear getGYear()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.GYear getGYear()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class GYearDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "gYear" element
      */
-    public void setGYear(org.xmlsoap.schemas.soap.encoding.GYear gYear)
+    @Override
+	public void setGYear(org.xmlsoap.schemas.soap.encoding.GYear gYear)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class GYearDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "gYear" element
      */
-    public org.xmlsoap.schemas.soap.encoding.GYear addNewGYear()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.GYear addNewGYear()
     {
         synchronized (monitor())
         {

@@ -27,7 +27,8 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Gets the "unsignedShort" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedShort getUnsignedShort()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedShort getUnsignedShort()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "unsignedShort" element
      */
-    public void setUnsignedShort(org.xmlsoap.schemas.soap.encoding.UnsignedShort unsignedShort)
+    @Override
+	public void setUnsignedShort(org.xmlsoap.schemas.soap.encoding.UnsignedShort unsignedShort)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Appends and returns a new empty "unsignedShort" element
      */
-    public org.xmlsoap.schemas.soap.encoding.UnsignedShort addNewUnsignedShort()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.UnsignedShort addNewUnsignedShort()
     {
         synchronized (monitor())
         {

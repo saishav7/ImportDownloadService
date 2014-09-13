@@ -27,7 +27,8 @@ public class IntDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Gets the "int" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Int getInt()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Int getInt()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class IntDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Sets the "int" element
      */
-    public void setInt(org.xmlsoap.schemas.soap.encoding.Int xint)
+    @Override
+	public void setInt(org.xmlsoap.schemas.soap.encoding.Int xint)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class IntDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplexC
     /**
      * Appends and returns a new empty "int" element
      */
-    public org.xmlsoap.schemas.soap.encoding.Int addNewInt()
+    @Override
+	public org.xmlsoap.schemas.soap.encoding.Int addNewInt()
     {
         synchronized (monitor())
         {

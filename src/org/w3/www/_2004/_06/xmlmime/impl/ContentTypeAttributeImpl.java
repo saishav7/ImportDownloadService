@@ -27,7 +27,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "contentType" attribute
      */
-    public java.lang.String getContentType()
+    @Override
+	public java.lang.String getContentType()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets (as xml) the "contentType" attribute
      */
-    public org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType xgetContentType()
+    @Override
+	public org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType xgetContentType()
     {
         synchronized (monitor())
         {
@@ -59,7 +61,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * True if has "contentType" attribute
      */
-    public boolean isSetContentType()
+    @Override
+	public boolean isSetContentType()
     {
         synchronized (monitor())
         {
@@ -71,7 +74,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "contentType" attribute
      */
-    public void setContentType(java.lang.String contentType)
+    @Override
+	public void setContentType(java.lang.String contentType)
     {
         synchronized (monitor())
         {
@@ -89,7 +93,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets (as xml) the "contentType" attribute
      */
-    public void xsetContentType(org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType contentType)
+    @Override
+	public void xsetContentType(org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType contentType)
     {
         synchronized (monitor())
         {
@@ -107,7 +112,8 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Unsets the "contentType" attribute
      */
-    public void unsetContentType()
+    @Override
+	public void unsetContentType()
     {
         synchronized (monitor())
         {

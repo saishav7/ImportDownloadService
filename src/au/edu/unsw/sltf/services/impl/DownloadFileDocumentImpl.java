@@ -27,7 +27,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "downloadFile" element
      */
-    public au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile getDownloadFile()
+    @Override
+	public au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile getDownloadFile()
     {
         synchronized (monitor())
         {
@@ -45,7 +46,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "downloadFile" element
      */
-    public void setDownloadFile(au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile downloadFile)
+    @Override
+	public void setDownloadFile(au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile downloadFile)
     {
         synchronized (monitor())
         {
@@ -63,7 +65,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Appends and returns a new empty "downloadFile" element
      */
-    public au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile addNewDownloadFile()
+    @Override
+	public au.edu.unsw.sltf.services.DownloadFileDocument.DownloadFile addNewDownloadFile()
     {
         synchronized (monitor())
         {
@@ -93,7 +96,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Gets the "eventSetId" element
          */
-        public java.lang.String getEventSetId()
+        @Override
+		public java.lang.String getEventSetId()
         {
             synchronized (monitor())
             {
@@ -111,7 +115,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Gets (as xml) the "eventSetId" element
          */
-        public org.apache.xmlbeans.XmlString xgetEventSetId()
+        @Override
+		public org.apache.xmlbeans.XmlString xgetEventSetId()
         {
             synchronized (monitor())
             {
@@ -125,7 +130,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets the "eventSetId" element
          */
-        public void setEventSetId(java.lang.String eventSetId)
+        @Override
+		public void setEventSetId(java.lang.String eventSetId)
         {
             synchronized (monitor())
             {
@@ -143,7 +149,8 @@ public class DownloadFileDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
         /**
          * Sets (as xml) the "eventSetId" element
          */
-        public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
+        @Override
+		public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
         {
             synchronized (monitor())
             {

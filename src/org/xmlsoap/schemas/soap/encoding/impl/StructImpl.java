@@ -28,7 +28,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Gets the "id" attribute
      */
-    public java.lang.String getId()
+    @Override
+	public java.lang.String getId()
     {
         synchronized (monitor())
         {
@@ -46,7 +47,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Gets (as xml) the "id" attribute
      */
-    public org.apache.xmlbeans.XmlID xgetId()
+    @Override
+	public org.apache.xmlbeans.XmlID xgetId()
     {
         synchronized (monitor())
         {
@@ -60,7 +62,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * True if has "id" attribute
      */
-    public boolean isSetId()
+    @Override
+	public boolean isSetId()
     {
         synchronized (monitor())
         {
@@ -72,7 +75,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "id" attribute
      */
-    public void setId(java.lang.String id)
+    @Override
+	public void setId(java.lang.String id)
     {
         synchronized (monitor())
         {
@@ -90,7 +94,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets (as xml) the "id" attribute
      */
-    public void xsetId(org.apache.xmlbeans.XmlID id)
+    @Override
+	public void xsetId(org.apache.xmlbeans.XmlID id)
     {
         synchronized (monitor())
         {
@@ -108,7 +113,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Unsets the "id" attribute
      */
-    public void unsetId()
+    @Override
+	public void unsetId()
     {
         synchronized (monitor())
         {
@@ -120,7 +126,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Gets the "href" attribute
      */
-    public java.lang.String getHref()
+    @Override
+	public java.lang.String getHref()
     {
         synchronized (monitor())
         {
@@ -138,7 +145,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Gets (as xml) the "href" attribute
      */
-    public org.apache.xmlbeans.XmlAnyURI xgetHref()
+    @Override
+	public org.apache.xmlbeans.XmlAnyURI xgetHref()
     {
         synchronized (monitor())
         {
@@ -152,7 +160,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * True if has "href" attribute
      */
-    public boolean isSetHref()
+    @Override
+	public boolean isSetHref()
     {
         synchronized (monitor())
         {
@@ -164,7 +173,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets the "href" attribute
      */
-    public void setHref(java.lang.String href)
+    @Override
+	public void setHref(java.lang.String href)
     {
         synchronized (monitor())
         {
@@ -182,7 +192,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Sets (as xml) the "href" attribute
      */
-    public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
+    @Override
+	public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
     {
         synchronized (monitor())
         {
@@ -200,7 +211,8 @@ public class StructImpl extends org.apache.xmlbeans.impl.values.XmlComplexConten
     /**
      * Unsets the "href" attribute
      */
-    public void unsetHref()
+    @Override
+	public void unsetHref()
     {
         synchronized (monitor())
         {
