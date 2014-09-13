@@ -59,7 +59,7 @@ import au.edu.unsw.sltf.services.impl.ImportDownloadFaultDocumentImpl;
 	             FileUtils.writeStringToFile(outputFile, md.stringify());
 	         } catch (IOException e) {
 	        	 e.printStackTrace();
-	             throw idfaultException("Cannot write to file", "ProgramError")
+	             throw idfaultException("Cannot write to file", "ProgramError");
 	         }
              
              ImportMarketDataResponseDocument respDoc = ImportMarketDataResponseDocument.Factory.newInstance();
