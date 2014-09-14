@@ -27,8 +27,12 @@ public class ExpectedMediaTypeDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Gets the "expectedMediaType" element
      */
+<<<<<<< HEAD
     @Override
 	public java.util.List getExpectedMediaType()
+=======
+    public java.util.List getExpectedMediaType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ExpectedMediaTypeDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Gets (as xml) the "expectedMediaType" element
      */
+<<<<<<< HEAD
     @Override
 	public org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument.ExpectedMediaType xgetExpectedMediaType()
+=======
+    public org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument.ExpectedMediaType xgetExpectedMediaType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -61,8 +69,12 @@ public class ExpectedMediaTypeDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets the "expectedMediaType" element
      */
+<<<<<<< HEAD
     @Override
 	public void setExpectedMediaType(java.util.List expectedMediaType)
+=======
+    public void setExpectedMediaType(java.util.List expectedMediaType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -80,8 +92,12 @@ public class ExpectedMediaTypeDocumentImpl extends org.apache.xmlbeans.impl.valu
     /**
      * Sets (as xml) the "expectedMediaType" element
      */
+<<<<<<< HEAD
     @Override
 	public void xsetExpectedMediaType(org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument.ExpectedMediaType expectedMediaType)
+=======
+    public void xsetExpectedMediaType(org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument.ExpectedMediaType expectedMediaType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

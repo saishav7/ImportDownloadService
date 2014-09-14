@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><project basedir="." default="jar.client">
     <!--Auto generated ant build file-->
     <property environment="env"/>
     <property name="axis2.home" value="/home/hari/axis2-1.6.2"/>
+=======
+<?xml version="1.0" encoding="UTF-8"?><project basedir="." default="jar.server">
+    <!--Auto generated ant build file-->
+    <property environment="env"/>
+    <property name="axis2.home" value="/apps/axis2-1.6.2/"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     <property name="project.base.dir" value="."/>
     <property name="maven.class.path" value=""/>
     <property name="name" value="ImportDownloadServices"/>
@@ -11,6 +18,10 @@
     <property name="classes" value="${build}/classes"/>
     <property name="lib" value="${build}/lib"/>
     <property name="resources" value="${project.base.dir}/resources"/>
+<<<<<<< HEAD
+=======
+    <property name="xbeans.packaged.jar.name" value="XBeans-packaged.jar"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     <property name="jars.ok" value=""/>
     <path id="axis2.class.path">
         <pathelement path="${java.class.path}"/>
@@ -24,28 +35,53 @@
         <mkdir dir="${classes}"/>
         <mkdir dir="${lib}"/>
     </target>
+<<<<<<< HEAD
     <target name="pre.compile.test" depends="init">
         <!--Test the classpath for the availability of necesary classes-->
+=======
+    <target name="jar.xbeans">
+        <jar basedir="${resources}" destfile="${lib}/${xbeans.packaged.jar.name}" excludes="**/services.xml, **/*.xsd"/>
+    </target>
+    <target name="pre.compile.test" depends="init, jar.xbeans">
+        <!--Test the classpath for the availability of necesary classes-->
+        <available classname="org.apache.xmlbeans.XmlObject" property="xbeans.available" classpathref="axis2.class.path"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         <available classname="javax.xml.stream.XMLStreamReader" property="stax.available" classpathref="axis2.class.path"/>
         <available classname="org.apache.axis2.engine.AxisEngine" property="axis2.available" classpathref="axis2.class.path"/>
         <condition property="jars.ok">
             <and>
+<<<<<<< HEAD
+=======
+                <isset property="xbeans.available"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
                 <isset property="stax.available"/>
                 <isset property="axis2.available"/>
             </and>
         </condition>
         <!--Print out the availabilities-->
+<<<<<<< HEAD
+=======
+        <echo message="XmlBeans Availability = ${xbeans.available}"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         <echo message="Stax Availability= ${stax.available}"/>
         <echo message="Axis2 Availability= ${axis2.available}"/>
     </target>
     <target name="compile.src" depends="pre.compile.test" if="jars.ok">
         <javac fork="true" memoryInitialSize="256m" memoryMaximumSize="256m" debug="on" destdir="${classes}" srcdir="${src}">
+<<<<<<< HEAD
+=======
+            <classpath location="${lib}/${xbeans.packaged.jar.name}"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
             <classpath refid="axis2.class.path"/>
         </javac>
     </target>
     <target name="compile.test" depends="compile.src" if="jars.ok">
         <javac fork="true" memoryInitialSize="256m" memoryMaximumSize="256m" debug="on" destdir="${classes}">
             <src path="${test}"/>
+<<<<<<< HEAD
+=======
+            <classpath location="${lib}/${xbeans.packaged.jar.name}"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
             <classpath refid="axis2.class.path"/>
         </javac>
     </target>
@@ -59,8 +95,15 @@
                 <include name="*.xml"/>
                 <include name="*.wsdl"/>
                 <include name="*.xsd"/>
+<<<<<<< HEAD
             </fileset>
         </copy>
+=======
+                <exclude name="**/schemaorg_apache_xmlbean/**"/>
+            </fileset>
+        </copy>
+        <copy file="${lib}/${xbeans.packaged.jar.name}" toDir="${classes}/lib"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         <jar destfile="${lib}/${name}.aar">
             <fileset excludes="**/Test.class" dir="${classes}"/>
         </jar>
@@ -73,6 +116,14 @@
                 <exclude name="**/*MessageReceiver.class"/>
                 <exclude name="**/*Skeleton.class"/>
             </fileset>
+<<<<<<< HEAD
+=======
+            <fileset dir="${resources}">
+                <exclude name="**/*.wsdl"/>
+                <exclude name="**/*.xsd"/>
+                <exclude name="**/*.xml"/>
+            </fileset>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         </jar>
     </target>
     <target name="make.repo" depends="jar.server" if="jars.ok">
@@ -86,11 +137,18 @@
             <classpath refid="axis2.class.path"/>
         </java>
     </target>
+<<<<<<< HEAD
     <target name="run.test" depends="compile.test" if="jars.ok">
         <path id="test.class.path">
             <pathelement location="${lib}/${name}-test-client.jar"/>
             <path refid="axis2.class.path"/>
             <pathelement location="${classes}"/>
+=======
+    <target name="run.test" depends="jar.client" if="jars.ok">
+        <path id="test.class.path">
+            <pathelement location="${lib}/${name}-test-client.jar"/>
+            <path refid="axis2.class.path"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         </path>
         <mkdir dir="${build}/test-reports/"/>
         <junit printsummary="yes" haltonfailure="yes">

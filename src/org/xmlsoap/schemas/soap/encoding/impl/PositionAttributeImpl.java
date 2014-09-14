@@ -27,8 +27,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets the "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getPosition()
+=======
+    public java.lang.String getPosition()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets (as xml) the "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetPosition()
+=======
+    public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetPosition()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -61,8 +69,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * True if has "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetPosition()
+=======
+    public boolean isSetPosition()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -74,8 +86,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setPosition(java.lang.String position)
+=======
+    public void setPosition(java.lang.String position)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -93,8 +109,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets (as xml) the "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetPosition(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate position)
+=======
+    public void xsetPosition(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate position)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -112,8 +132,12 @@ public class PositionAttributeImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Unsets the "position" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetPosition()
+=======
+    public void unsetPosition()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

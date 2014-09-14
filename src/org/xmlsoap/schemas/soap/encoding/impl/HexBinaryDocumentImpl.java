@@ -27,8 +27,12 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets the "hexBinary" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.HexBinary getHexBinary()
+=======
+    public org.xmlsoap.schemas.soap.encoding.HexBinary getHexBinary()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "hexBinary" element
      */
+<<<<<<< HEAD
     @Override
 	public void setHexBinary(org.xmlsoap.schemas.soap.encoding.HexBinary hexBinary)
+=======
+    public void setHexBinary(org.xmlsoap.schemas.soap.encoding.HexBinary hexBinary)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class HexBinaryDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Appends and returns a new empty "hexBinary" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.HexBinary addNewHexBinary()
+=======
+    public org.xmlsoap.schemas.soap.encoding.HexBinary addNewHexBinary()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

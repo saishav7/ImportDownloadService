@@ -15,6 +15,7 @@
         /**
          * Auto generated method signature
          * 
+<<<<<<< HEAD
          * @param importMarketData
          * @throws ImportDownloadFaultException : 
          */
@@ -24,6 +25,17 @@
         (
           au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData
          )
+=======
+                                    * @param importMarketData
+             * @throws ImportDownloadFaultException : 
+         */
+
+        
+                public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument importMarketData
+                (
+                  au.edu.unsw.sltf.services.ImportMarketDataDocument importMarketData
+                 )
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
             throws ImportDownloadFaultException;
         
          

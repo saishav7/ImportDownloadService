@@ -27,8 +27,12 @@ public class IntegerDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "integer" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Integer getInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Integer getInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class IntegerDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "integer" element
      */
+<<<<<<< HEAD
     @Override
 	public void setInteger(org.xmlsoap.schemas.soap.encoding.Integer integer)
+=======
+    public void setInteger(org.xmlsoap.schemas.soap.encoding.Integer integer)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class IntegerDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Appends and returns a new empty "integer" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Integer addNewInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Integer addNewInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

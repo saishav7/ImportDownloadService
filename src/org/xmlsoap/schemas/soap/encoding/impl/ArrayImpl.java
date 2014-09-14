@@ -32,8 +32,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getArrayType()
+=======
+    public java.lang.String getArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -51,8 +55,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets (as xml) the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlString xgetArrayType()
+=======
+    public org.apache.xmlbeans.XmlString xgetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -66,8 +74,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * True if has "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetArrayType()
+=======
+    public boolean isSetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -79,8 +91,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setArrayType(java.lang.String arrayType)
+=======
+    public void setArrayType(java.lang.String arrayType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -98,8 +114,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets (as xml) the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
+=======
+    public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -117,8 +137,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Unsets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetArrayType()
+=======
+    public void unsetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -130,8 +154,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getOffset()
+=======
+    public java.lang.String getOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -149,8 +177,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets (as xml) the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
+=======
+    public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -164,8 +196,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * True if has "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetOffset()
+=======
+    public boolean isSetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -177,8 +213,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setOffset(java.lang.String offset)
+=======
+    public void setOffset(java.lang.String offset)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -196,8 +236,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets (as xml) the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
+=======
+    public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -215,8 +259,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Unsets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetOffset()
+=======
+    public void unsetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -228,8 +276,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getId()
+=======
+    public java.lang.String getId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -247,8 +299,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets (as xml) the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlID xgetId()
+=======
+    public org.apache.xmlbeans.XmlID xgetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -262,8 +318,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * True if has "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetId()
+=======
+    public boolean isSetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -275,8 +335,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setId(java.lang.String id)
+=======
+    public void setId(java.lang.String id)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -294,8 +358,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets (as xml) the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetId(org.apache.xmlbeans.XmlID id)
+=======
+    public void xsetId(org.apache.xmlbeans.XmlID id)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -313,8 +381,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Unsets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetId()
+=======
+    public void unsetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -326,8 +398,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getHref()
+=======
+    public java.lang.String getHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -345,8 +421,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Gets (as xml) the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlAnyURI xgetHref()
+=======
+    public org.apache.xmlbeans.XmlAnyURI xgetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -360,8 +440,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * True if has "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetHref()
+=======
+    public boolean isSetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -373,8 +457,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setHref(java.lang.String href)
+=======
+    public void setHref(java.lang.String href)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -392,8 +480,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Sets (as xml) the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
+=======
+    public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -411,8 +503,12 @@ public class ArrayImpl extends org.apache.xmlbeans.impl.values.XmlComplexContent
     /**
      * Unsets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetHref()
+=======
+    public void unsetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

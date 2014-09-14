@@ -17,7 +17,11 @@ package org.w3.www._2004._06.xmlmime;
 public interface ExpectedMediaTypeDocument extends org.apache.xmlbeans.XmlObject
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
+<<<<<<< HEAD
         org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ExpectedMediaTypeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s846B6F08037A90CD50221F72B11C673B").resolveHandle("expectedmediatype0e08doctype");
+=======
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ExpectedMediaTypeDocument.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9FACC500638CA4DE2C3383CDB2AE4FA9").resolveHandle("expectedmediatype0e08doctype");
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     
     /**
      * Gets the "expectedMediaType" element
@@ -50,6 +54,7 @@ public interface ExpectedMediaTypeDocument extends org.apache.xmlbeans.XmlObject
         java.util.List xgetListValue();
         void setListValue(java.util.List list);
         /** @deprecated */
+<<<<<<< HEAD
         @Deprecated
 		java.util.List listValue();
         /** @deprecated */
@@ -60,6 +65,15 @@ public interface ExpectedMediaTypeDocument extends org.apache.xmlbeans.XmlObject
 		void set(java.util.List list);
         public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
             org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ExpectedMediaType.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s846B6F08037A90CD50221F72B11C673B").resolveHandle("expectedmediatypec05aelemtype");
+=======
+        java.util.List listValue();
+        /** @deprecated */
+        java.util.List xlistValue();
+        /** @deprecated */
+        void set(java.util.List list);
+        public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
+            org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(ExpectedMediaType.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9FACC500638CA4DE2C3383CDB2AE4FA9").resolveHandle("expectedmediatypec05aelemtype");
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         
         /**
          * A factory class with static methods for creating instances
@@ -139,6 +153,7 @@ public interface ExpectedMediaTypeDocument extends org.apache.xmlbeans.XmlObject
           return (org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( node, type, options ); }
         
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+<<<<<<< HEAD
         @Deprecated
 		public static org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
           return (org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
@@ -156,6 +171,21 @@ public interface ExpectedMediaTypeDocument extends org.apache.xmlbeans.XmlObject
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
         @Deprecated
 		public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+=======
+        public static org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.w3.www._2004._06.xmlmime.ExpectedMediaTypeDocument) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, options ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
           return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, options ); }
         
         private Factory() { } // No instance of this class allowed

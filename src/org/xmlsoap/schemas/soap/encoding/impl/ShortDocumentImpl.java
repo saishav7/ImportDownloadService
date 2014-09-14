@@ -27,8 +27,12 @@ public class ShortDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "short" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Short getShort()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Short getShort()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ShortDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "short" element
      */
+<<<<<<< HEAD
     @Override
 	public void setShort(org.xmlsoap.schemas.soap.encoding.Short xshort)
+=======
+    public void setShort(org.xmlsoap.schemas.soap.encoding.Short xshort)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class ShortDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "short" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Short addNewShort()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Short addNewShort()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

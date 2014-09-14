@@ -27,8 +27,12 @@ public class NMTOKENSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "NMTOKENS" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NMTOKENS getNMTOKENS()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NMTOKENS getNMTOKENS()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NMTOKENSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "NMTOKENS" element
      */
+<<<<<<< HEAD
     @Override
 	public void setNMTOKENS(org.xmlsoap.schemas.soap.encoding.NMTOKENS nmtokens)
+=======
+    public void setNMTOKENS(org.xmlsoap.schemas.soap.encoding.NMTOKENS nmtokens)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NMTOKENSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "NMTOKENS" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NMTOKENS addNewNMTOKENS()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NMTOKENS addNewNMTOKENS()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

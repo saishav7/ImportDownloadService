@@ -27,8 +27,12 @@ public class LongDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "long" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Long getLong()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Long getLong()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class LongDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "long" element
      */
+<<<<<<< HEAD
     @Override
 	public void setLong(org.xmlsoap.schemas.soap.encoding.Long xlong)
+=======
+    public void setLong(org.xmlsoap.schemas.soap.encoding.Long xlong)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class LongDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "long" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Long addNewLong()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Long addNewLong()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

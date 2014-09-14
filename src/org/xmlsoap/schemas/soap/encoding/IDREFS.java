@@ -15,6 +15,7 @@ package org.xmlsoap.schemas.soap.encoding;
  */
 public interface IDREFS extends org.apache.xmlbeans.XmlIDREFS
 {
+<<<<<<< HEAD
     @Override
 	java.util.List getListValue();
     @Override
@@ -35,6 +36,19 @@ public interface IDREFS extends org.apache.xmlbeans.XmlIDREFS
 	void set(java.util.List list);
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
         org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IDREFS.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s846B6F08037A90CD50221F72B11C673B").resolveHandle("idrefs0de1type");
+=======
+    java.util.List getListValue();
+    java.util.List xgetListValue();
+    void setListValue(java.util.List list);
+    /** @deprecated */
+    java.util.List listValue();
+    /** @deprecated */
+    java.util.List xlistValue();
+    /** @deprecated */
+    void set(java.util.List list);
+    public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(IDREFS.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9FACC500638CA4DE2C3383CDB2AE4FA9").resolveHandle("idrefs0de1type");
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     
     /**
      * Gets the "id" attribute
@@ -154,6 +168,7 @@ public interface IDREFS extends org.apache.xmlbeans.XmlIDREFS
           return (org.xmlsoap.schemas.soap.encoding.IDREFS) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( node, type, options ); }
         
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+<<<<<<< HEAD
         @Deprecated
 		public static org.xmlsoap.schemas.soap.encoding.IDREFS parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
           return (org.xmlsoap.schemas.soap.encoding.IDREFS) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
@@ -171,6 +186,21 @@ public interface IDREFS extends org.apache.xmlbeans.XmlIDREFS
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
         @Deprecated
 		public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+=======
+        public static org.xmlsoap.schemas.soap.encoding.IDREFS parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.xmlsoap.schemas.soap.encoding.IDREFS) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.xmlsoap.schemas.soap.encoding.IDREFS parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.xmlsoap.schemas.soap.encoding.IDREFS) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, options ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
           return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, options ); }
         
         private Factory() { } // No instance of this class allowed

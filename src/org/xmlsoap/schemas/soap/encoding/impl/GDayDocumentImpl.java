@@ -27,8 +27,12 @@ public class GDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "gDay" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GDay getGDay()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GDay getGDay()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class GDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "gDay" element
      */
+<<<<<<< HEAD
     @Override
 	public void setGDay(org.xmlsoap.schemas.soap.encoding.GDay gDay)
+=======
+    public void setGDay(org.xmlsoap.schemas.soap.encoding.GDay gDay)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class GDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "gDay" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GDay addNewGDay()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GDay addNewGDay()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

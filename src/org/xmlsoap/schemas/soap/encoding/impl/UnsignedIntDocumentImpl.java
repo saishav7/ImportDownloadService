@@ -27,8 +27,12 @@ public class UnsignedIntDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Gets the "unsignedInt" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedInt getUnsignedInt()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedInt getUnsignedInt()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class UnsignedIntDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Sets the "unsignedInt" element
      */
+<<<<<<< HEAD
     @Override
 	public void setUnsignedInt(org.xmlsoap.schemas.soap.encoding.UnsignedInt unsignedInt)
+=======
+    public void setUnsignedInt(org.xmlsoap.schemas.soap.encoding.UnsignedInt unsignedInt)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class UnsignedIntDocumentImpl extends org.apache.xmlbeans.impl.values.Xml
     /**
      * Appends and returns a new empty "unsignedInt" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedInt addNewUnsignedInt()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedInt addNewUnsignedInt()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

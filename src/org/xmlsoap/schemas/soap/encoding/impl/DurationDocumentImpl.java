@@ -27,8 +27,12 @@ public class DurationDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "duration" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Duration getDuration()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Duration getDuration()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class DurationDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "duration" element
      */
+<<<<<<< HEAD
     @Override
 	public void setDuration(org.xmlsoap.schemas.soap.encoding.Duration duration)
+=======
+    public void setDuration(org.xmlsoap.schemas.soap.encoding.Duration duration)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class DurationDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "duration" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Duration addNewDuration()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Duration addNewDuration()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

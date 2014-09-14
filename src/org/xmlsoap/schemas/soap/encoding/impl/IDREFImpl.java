@@ -33,8 +33,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Gets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getId()
+=======
+    public java.lang.String getId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -52,8 +56,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Gets (as xml) the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlID xgetId()
+=======
+    public org.apache.xmlbeans.XmlID xgetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -67,8 +75,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * True if has "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetId()
+=======
+    public boolean isSetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -80,8 +92,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Sets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setId(java.lang.String id)
+=======
+    public void setId(java.lang.String id)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -99,8 +115,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Sets (as xml) the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetId(org.apache.xmlbeans.XmlID id)
+=======
+    public void xsetId(org.apache.xmlbeans.XmlID id)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -118,8 +138,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Unsets the "id" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetId()
+=======
+    public void unsetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -131,8 +155,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Gets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getHref()
+=======
+    public java.lang.String getHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -150,8 +178,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Gets (as xml) the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlAnyURI xgetHref()
+=======
+    public org.apache.xmlbeans.XmlAnyURI xgetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -165,8 +197,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * True if has "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetHref()
+=======
+    public boolean isSetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -178,8 +214,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Sets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setHref(java.lang.String href)
+=======
+    public void setHref(java.lang.String href)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -197,8 +237,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Sets (as xml) the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
+=======
+    public void xsetHref(org.apache.xmlbeans.XmlAnyURI href)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -216,8 +260,12 @@ public class IDREFImpl extends org.apache.xmlbeans.impl.values.JavaStringHolderE
     /**
      * Unsets the "href" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetHref()
+=======
+    public void unsetHref()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

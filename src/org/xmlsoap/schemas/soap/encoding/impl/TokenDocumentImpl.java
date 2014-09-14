@@ -27,8 +27,12 @@ public class TokenDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "token" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Token getToken()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Token getToken()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class TokenDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "token" element
      */
+<<<<<<< HEAD
     @Override
 	public void setToken(org.xmlsoap.schemas.soap.encoding.Token token)
+=======
+    public void setToken(org.xmlsoap.schemas.soap.encoding.Token token)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class TokenDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "token" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Token addNewToken()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Token addNewToken()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

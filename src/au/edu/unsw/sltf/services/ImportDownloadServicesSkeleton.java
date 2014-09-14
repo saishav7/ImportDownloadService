@@ -42,6 +42,7 @@ import au.edu.unsw.sltf.services.helper.MarketData;
 		  throws ImportDownloadFaultException{
         	 ImportMarketData data = importMarketData0.getImportMarketData();
              
+<<<<<<< HEAD
              System.out.println("getProperty = " + resourcesFolder);
              
              Random rand = new Random();
@@ -51,6 +52,15 @@ import au.edu.unsw.sltf.services.helper.MarketData;
              while (outputFile.exists()) {
             	 fileName = rand.nextInt(1000000) + 1;
                  outputFile = new File(resourcesFolder + "/" + fileName);
+=======
+             Random rand = new Random();
+             int  fileName = rand.nextInt(1000000) + 1;
+             
+             File outputFile = new File(resourcesFolder + fileName);
+             while (outputFile.exists()) {
+            	 fileName = rand.nextInt(1000000) + 1;
+                 outputFile = new File(resourcesFolder + fileName);
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
              }
              
              MarketData md;
@@ -107,7 +117,11 @@ import au.edu.unsw.sltf.services.helper.MarketData;
                  
                  String returnStr = "EventSet Id: " + dfreq.getEventSetId();
 
+<<<<<<< HEAD
                  String url = resourcesFolder + "/" + returnStr;
+=======
+                 String url = resourcesFolder + dfreq.getEventSetId() + ".csv";
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
                  File f = new File(url);
 
                  if (f.exists()) {

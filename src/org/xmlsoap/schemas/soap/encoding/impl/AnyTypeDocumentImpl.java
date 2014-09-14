@@ -27,8 +27,12 @@ public class AnyTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "anyType" element
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlObject getAnyType()
+=======
+    public org.apache.xmlbeans.XmlObject getAnyType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class AnyTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "anyType" element
      */
+<<<<<<< HEAD
     @Override
 	public void setAnyType(org.apache.xmlbeans.XmlObject anyType)
+=======
+    public void setAnyType(org.apache.xmlbeans.XmlObject anyType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class AnyTypeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Appends and returns a new empty "anyType" element
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlObject addNewAnyType()
+=======
+    public org.apache.xmlbeans.XmlObject addNewAnyType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

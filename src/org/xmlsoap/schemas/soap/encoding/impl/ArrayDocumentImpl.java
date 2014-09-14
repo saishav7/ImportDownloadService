@@ -27,8 +27,12 @@ public class ArrayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "Array" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Array getArray()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Array getArray()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ArrayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "Array" element
      */
+<<<<<<< HEAD
     @Override
 	public void setArray(org.xmlsoap.schemas.soap.encoding.Array array)
+=======
+    public void setArray(org.xmlsoap.schemas.soap.encoding.Array array)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class ArrayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Appends and returns a new empty "Array" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Array addNewArray()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Array addNewArray()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

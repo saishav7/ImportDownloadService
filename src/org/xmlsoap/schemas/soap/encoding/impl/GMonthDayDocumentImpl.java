@@ -27,8 +27,12 @@ public class GMonthDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Gets the "gMonthDay" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GMonthDay getGMonthDay()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GMonthDay getGMonthDay()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class GMonthDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Sets the "gMonthDay" element
      */
+<<<<<<< HEAD
     @Override
 	public void setGMonthDay(org.xmlsoap.schemas.soap.encoding.GMonthDay gMonthDay)
+=======
+    public void setGMonthDay(org.xmlsoap.schemas.soap.encoding.GMonthDay gMonthDay)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class GMonthDayDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCo
     /**
      * Appends and returns a new empty "gMonthDay" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GMonthDay addNewGMonthDay()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GMonthDay addNewGMonthDay()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

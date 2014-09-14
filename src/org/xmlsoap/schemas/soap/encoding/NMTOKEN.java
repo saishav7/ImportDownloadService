@@ -16,7 +16,11 @@ package org.xmlsoap.schemas.soap.encoding;
 public interface NMTOKEN extends org.apache.xmlbeans.XmlNMTOKEN
 {
     public static final org.apache.xmlbeans.SchemaType type = (org.apache.xmlbeans.SchemaType)
+<<<<<<< HEAD
         org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(NMTOKEN.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s846B6F08037A90CD50221F72B11C673B").resolveHandle("nmtoken5d0etype");
+=======
+        org.apache.xmlbeans.XmlBeans.typeSystemForClassLoader(NMTOKEN.class.getClassLoader(), "schemaorg_apache_xmlbeans.system.s9FACC500638CA4DE2C3383CDB2AE4FA9").resolveHandle("nmtoken5d0etype");
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     
     /**
      * Gets the "id" attribute
@@ -136,6 +140,7 @@ public interface NMTOKEN extends org.apache.xmlbeans.XmlNMTOKEN
           return (org.xmlsoap.schemas.soap.encoding.NMTOKEN) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( node, type, options ); }
         
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+<<<<<<< HEAD
         @Deprecated
 		public static org.xmlsoap.schemas.soap.encoding.NMTOKEN parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
           return (org.xmlsoap.schemas.soap.encoding.NMTOKEN) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
@@ -153,6 +158,21 @@ public interface NMTOKEN extends org.apache.xmlbeans.XmlNMTOKEN
         /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
         @Deprecated
 		public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+=======
+        public static org.xmlsoap.schemas.soap.encoding.NMTOKEN parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.xmlsoap.schemas.soap.encoding.NMTOKEN) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.xmlsoap.schemas.soap.encoding.NMTOKEN parse(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return (org.xmlsoap.schemas.soap.encoding.NMTOKEN) org.apache.xmlbeans.XmlBeans.getContextTypeLoader().parse( xis, type, options ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+          return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, null ); }
+        
+        /** @deprecated {@link org.apache.xmlbeans.xml.stream.XMLInputStream} */
+        public static org.apache.xmlbeans.xml.stream.XMLInputStream newValidatingXMLInputStream(org.apache.xmlbeans.xml.stream.XMLInputStream xis, org.apache.xmlbeans.XmlOptions options) throws org.apache.xmlbeans.XmlException, org.apache.xmlbeans.xml.stream.XMLStreamException {
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
           return org.apache.xmlbeans.XmlBeans.getContextTypeLoader().newValidatingXMLInputStream( xis, type, options ); }
         
         private Factory() { } // No instance of this class allowed

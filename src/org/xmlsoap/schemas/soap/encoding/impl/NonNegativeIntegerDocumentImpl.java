@@ -27,8 +27,12 @@ public class NonNegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Gets the "nonNegativeInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NonNegativeInteger getNonNegativeInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NonNegativeInteger getNonNegativeInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NonNegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Sets the "nonNegativeInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public void setNonNegativeInteger(org.xmlsoap.schemas.soap.encoding.NonNegativeInteger nonNegativeInteger)
+=======
+    public void setNonNegativeInteger(org.xmlsoap.schemas.soap.encoding.NonNegativeInteger nonNegativeInteger)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NonNegativeIntegerDocumentImpl extends org.apache.xmlbeans.impl.val
     /**
      * Appends and returns a new empty "nonNegativeInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NonNegativeInteger addNewNonNegativeInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NonNegativeInteger addNewNonNegativeInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

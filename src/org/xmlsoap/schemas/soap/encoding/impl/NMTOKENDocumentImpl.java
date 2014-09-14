@@ -27,8 +27,12 @@ public class NMTOKENDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "NMTOKEN" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NMTOKEN getNMTOKEN()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NMTOKEN getNMTOKEN()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NMTOKENDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "NMTOKEN" element
      */
+<<<<<<< HEAD
     @Override
 	public void setNMTOKEN(org.xmlsoap.schemas.soap.encoding.NMTOKEN nmtoken)
+=======
+    public void setNMTOKEN(org.xmlsoap.schemas.soap.encoding.NMTOKEN nmtoken)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NMTOKENDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Appends and returns a new empty "NMTOKEN" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NMTOKEN addNewNMTOKEN()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NMTOKEN addNewNMTOKEN()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

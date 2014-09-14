@@ -27,8 +27,12 @@ public class TimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "time" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Time getTime()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Time getTime()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class TimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "time" element
      */
+<<<<<<< HEAD
     @Override
 	public void setTime(org.xmlsoap.schemas.soap.encoding.Time time)
+=======
+    public void setTime(org.xmlsoap.schemas.soap.encoding.Time time)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class TimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "time" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Time addNewTime()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Time addNewTime()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

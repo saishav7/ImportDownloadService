@@ -27,8 +27,12 @@ public class DoubleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "double" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Double getDouble()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Double getDouble()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class DoubleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "double" element
      */
+<<<<<<< HEAD
     @Override
 	public void setDouble(org.xmlsoap.schemas.soap.encoding.Double xdouble)
+=======
+    public void setDouble(org.xmlsoap.schemas.soap.encoding.Double xdouble)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class DoubleDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "double" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Double addNewDouble()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Double addNewDouble()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

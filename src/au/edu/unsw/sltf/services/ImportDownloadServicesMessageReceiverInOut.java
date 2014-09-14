@@ -14,8 +14,12 @@
         public class ImportDownloadServicesMessageReceiverInOut extends org.apache.axis2.receivers.AbstractInOutMessageReceiver{
 
 
+<<<<<<< HEAD
         @Override
 		public void invokeBusinessLogic(org.apache.axis2.context.MessageContext msgContext, org.apache.axis2.context.MessageContext newMsgContext)
+=======
+        public void invokeBusinessLogic(org.apache.axis2.context.MessageContext msgContext, org.apache.axis2.context.MessageContext newMsgContext)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         throws org.apache.axis2.AxisFault{
 
         try {

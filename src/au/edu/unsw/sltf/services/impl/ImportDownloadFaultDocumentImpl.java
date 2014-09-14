@@ -27,8 +27,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Gets the "importDownloadFault" element
      */
+<<<<<<< HEAD
     @Override
 	public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault getImportDownloadFault()
+=======
+    public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault getImportDownloadFault()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Sets the "importDownloadFault" element
      */
+<<<<<<< HEAD
     @Override
 	public void setImportDownloadFault(au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault importDownloadFault)
+=======
+    public void setImportDownloadFault(au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault importDownloadFault)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
     /**
      * Appends and returns a new empty "importDownloadFault" element
      */
+<<<<<<< HEAD
     @Override
 	public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault addNewImportDownloadFault()
+=======
+    public au.edu.unsw.sltf.services.ImportDownloadFaultDocument.ImportDownloadFault addNewImportDownloadFault()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -98,8 +110,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets the "faultType" element
          */
+<<<<<<< HEAD
         @Override
 		public au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum getFaultType()
+=======
+        public au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum getFaultType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -117,8 +133,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets (as xml) the "faultType" element
          */
+<<<<<<< HEAD
         @Override
 		public au.edu.unsw.sltf.services.ImportDownloadFaultType xgetFaultType()
+=======
+        public au.edu.unsw.sltf.services.ImportDownloadFaultType xgetFaultType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -132,8 +152,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "faultType" element
          */
+<<<<<<< HEAD
         @Override
 		public void setFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType)
+=======
+        public void setFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType.Enum faultType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -151,8 +175,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets (as xml) the "faultType" element
          */
+<<<<<<< HEAD
         @Override
 		public void xsetFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType faultType)
+=======
+        public void xsetFaultType(au.edu.unsw.sltf.services.ImportDownloadFaultType faultType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -170,8 +198,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets the "faultMessage" element
          */
+<<<<<<< HEAD
         @Override
 		public java.lang.String getFaultMessage()
+=======
+        public java.lang.String getFaultMessage()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -189,8 +221,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Gets (as xml) the "faultMessage" element
          */
+<<<<<<< HEAD
         @Override
 		public org.apache.xmlbeans.XmlString xgetFaultMessage()
+=======
+        public org.apache.xmlbeans.XmlString xgetFaultMessage()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -204,8 +240,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets the "faultMessage" element
          */
+<<<<<<< HEAD
         @Override
 		public void setFaultMessage(java.lang.String faultMessage)
+=======
+        public void setFaultMessage(java.lang.String faultMessage)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -223,8 +263,12 @@ public class ImportDownloadFaultDocumentImpl extends org.apache.xmlbeans.impl.va
         /**
          * Sets (as xml) the "faultMessage" element
          */
+<<<<<<< HEAD
         @Override
 		public void xsetFaultMessage(org.apache.xmlbeans.XmlString faultMessage)
+=======
+        public void xsetFaultMessage(org.apache.xmlbeans.XmlString faultMessage)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {

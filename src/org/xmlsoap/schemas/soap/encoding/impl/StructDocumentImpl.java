@@ -27,8 +27,12 @@ public class StructDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "Struct" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Struct getStruct()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Struct getStruct()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class StructDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "Struct" element
      */
+<<<<<<< HEAD
     @Override
 	public void setStruct(org.xmlsoap.schemas.soap.encoding.Struct struct)
+=======
+    public void setStruct(org.xmlsoap.schemas.soap.encoding.Struct struct)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class StructDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "Struct" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Struct addNewStruct()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Struct addNewStruct()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

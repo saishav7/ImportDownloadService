@@ -27,8 +27,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Gets the "importMarketDataResponse" element
      */
+<<<<<<< HEAD
     @Override
 	public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse getImportMarketDataResponse()
+=======
+    public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse getImportMarketDataResponse()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Sets the "importMarketDataResponse" element
      */
+<<<<<<< HEAD
     @Override
 	public void setImportMarketDataResponse(au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse importMarketDataResponse)
+=======
+    public void setImportMarketDataResponse(au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse importMarketDataResponse)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
     /**
      * Appends and returns a new empty "importMarketDataResponse" element
      */
+<<<<<<< HEAD
     @Override
 	public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse addNewImportMarketDataResponse()
+=======
+    public au.edu.unsw.sltf.services.ImportMarketDataResponseDocument.ImportMarketDataResponse addNewImportMarketDataResponse()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -96,8 +108,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Gets the "eventSetId" element
          */
+<<<<<<< HEAD
         @Override
 		public java.lang.String getEventSetId()
+=======
+        public java.lang.String getEventSetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -115,8 +131,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Gets (as xml) the "eventSetId" element
          */
+<<<<<<< HEAD
         @Override
 		public org.apache.xmlbeans.XmlString xgetEventSetId()
+=======
+        public org.apache.xmlbeans.XmlString xgetEventSetId()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -130,8 +150,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets the "eventSetId" element
          */
+<<<<<<< HEAD
         @Override
 		public void setEventSetId(java.lang.String eventSetId)
+=======
+        public void setEventSetId(java.lang.String eventSetId)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {
@@ -149,8 +173,12 @@ public class ImportMarketDataResponseDocumentImpl extends org.apache.xmlbeans.im
         /**
          * Sets (as xml) the "eventSetId" element
          */
+<<<<<<< HEAD
         @Override
 		public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
+=======
+        public void xsetEventSetId(org.apache.xmlbeans.XmlString eventSetId)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
         {
             synchronized (monitor())
             {

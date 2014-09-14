@@ -27,8 +27,12 @@ public class NormalizedStringDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Gets the "normalizedString" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NormalizedString getNormalizedString()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NormalizedString getNormalizedString()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NormalizedStringDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Sets the "normalizedString" element
      */
+<<<<<<< HEAD
     @Override
 	public void setNormalizedString(org.xmlsoap.schemas.soap.encoding.NormalizedString normalizedString)
+=======
+    public void setNormalizedString(org.xmlsoap.schemas.soap.encoding.NormalizedString normalizedString)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NormalizedStringDocumentImpl extends org.apache.xmlbeans.impl.value
     /**
      * Appends and returns a new empty "normalizedString" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NormalizedString addNewNormalizedString()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NormalizedString addNewNormalizedString()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

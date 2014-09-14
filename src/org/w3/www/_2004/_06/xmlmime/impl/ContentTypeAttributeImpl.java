@@ -27,8 +27,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getContentType()
+=======
+    public java.lang.String getContentType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets (as xml) the "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType xgetContentType()
+=======
+    public org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType xgetContentType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -61,8 +69,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * True if has "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetContentType()
+=======
+    public boolean isSetContentType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -74,8 +86,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setContentType(java.lang.String contentType)
+=======
+    public void setContentType(java.lang.String contentType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -93,8 +109,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets (as xml) the "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetContentType(org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType contentType)
+=======
+    public void xsetContentType(org.w3.www._2004._06.xmlmime.ContentTypeAttribute.ContentType contentType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -112,8 +132,12 @@ public class ContentTypeAttributeImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Unsets the "contentType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetContentType()
+=======
+    public void unsetContentType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

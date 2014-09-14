@@ -27,8 +27,12 @@ public class DateTimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "dateTime" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.DateTime getDateTime()
+=======
+    public org.xmlsoap.schemas.soap.encoding.DateTime getDateTime()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class DateTimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "dateTime" element
      */
+<<<<<<< HEAD
     @Override
 	public void setDateTime(org.xmlsoap.schemas.soap.encoding.DateTime dateTime)
+=======
+    public void setDateTime(org.xmlsoap.schemas.soap.encoding.DateTime dateTime)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class DateTimeDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "dateTime" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.DateTime addNewDateTime()
+=======
+    public org.xmlsoap.schemas.soap.encoding.DateTime addNewDateTime()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

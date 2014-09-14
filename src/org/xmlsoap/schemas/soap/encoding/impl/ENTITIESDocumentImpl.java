@@ -27,8 +27,12 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "ENTITIES" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.ENTITIES getENTITIES()
+=======
+    public org.xmlsoap.schemas.soap.encoding.ENTITIES getENTITIES()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "ENTITIES" element
      */
+<<<<<<< HEAD
     @Override
 	public void setENTITIES(org.xmlsoap.schemas.soap.encoding.ENTITIES entities)
+=======
+    public void setENTITIES(org.xmlsoap.schemas.soap.encoding.ENTITIES entities)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class ENTITIESDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "ENTITIES" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.ENTITIES addNewENTITIES()
+=======
+    public org.xmlsoap.schemas.soap.encoding.ENTITIES addNewENTITIES()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/activation-1.1.jar"/>
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/apache-mime4j-core-0.7.2.jar"/>
@@ -68,6 +72,7 @@
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/xml-resolver-1.2.jar"/>
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/xmlbeans-2.3.0.jar"/>
 	<classpathentry kind="lib" path="/apps/axis2-1.6.2/lib/XmlSchema-1.4.7.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="/home/hari/axis2-1.6.2/lib/activation-1.1.jar"/>
 	<classpathentry kind="lib" path="/home/hari/axis2-1.6.2/lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="/home/hari/axis2-1.6.2/lib/apache-mime4j-core-0.7.2.jar"/>
@@ -136,5 +141,7 @@
 	<classpathentry kind="lib" path="/home/hari/axis2-1.6.2/lib/xml-resolver-1.2.jar"/>
 	<classpathentry kind="lib" path="/home/hari/axis2-1.6.2/lib/XmlSchema-1.4.7.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk"/>
+=======
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
 	<classpathentry kind="output" path="bin"/>
 </classpath>

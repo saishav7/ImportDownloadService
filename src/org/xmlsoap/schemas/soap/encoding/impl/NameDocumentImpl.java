@@ -27,8 +27,12 @@ public class NameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Gets the "Name" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Name getName()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Name getName()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Sets the "Name" element
      */
+<<<<<<< HEAD
     @Override
 	public void setName(org.xmlsoap.schemas.soap.encoding.Name name)
+=======
+    public void setName(org.xmlsoap.schemas.soap.encoding.Name name)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NameDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComplex
     /**
      * Appends and returns a new empty "Name" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Name addNewName()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Name addNewName()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

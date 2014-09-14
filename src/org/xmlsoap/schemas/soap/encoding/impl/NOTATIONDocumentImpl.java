@@ -27,8 +27,12 @@ public class NOTATIONDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Gets the "NOTATION" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NOTATION getNOTATION()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NOTATION getNOTATION()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class NOTATIONDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Sets the "NOTATION" element
      */
+<<<<<<< HEAD
     @Override
 	public void setNOTATION(org.xmlsoap.schemas.soap.encoding.NOTATION notation)
+=======
+    public void setNOTATION(org.xmlsoap.schemas.soap.encoding.NOTATION notation)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class NOTATIONDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCom
     /**
      * Appends and returns a new empty "NOTATION" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.NOTATION addNewNOTATION()
+=======
+    public org.xmlsoap.schemas.soap.encoding.NOTATION addNewNOTATION()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

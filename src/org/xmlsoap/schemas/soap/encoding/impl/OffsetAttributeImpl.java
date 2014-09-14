@@ -27,8 +27,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getOffset()
+=======
+    public java.lang.String getOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets (as xml) the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
+=======
+    public org.xmlsoap.schemas.soap.encoding.ArrayCoordinate xgetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -61,8 +69,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * True if has "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetOffset()
+=======
+    public boolean isSetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -74,8 +86,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setOffset(java.lang.String offset)
+=======
+    public void setOffset(java.lang.String offset)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -93,8 +109,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets (as xml) the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
+=======
+    public void xsetOffset(org.xmlsoap.schemas.soap.encoding.ArrayCoordinate offset)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -112,8 +132,12 @@ public class OffsetAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Unsets the "offset" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetOffset()
+=======
+    public void unsetOffset()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

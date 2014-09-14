@@ -27,8 +27,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets the "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean getRoot()
+=======
+    public boolean getRoot()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -50,8 +54,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Gets (as xml) the "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.RootAttribute.Root xgetRoot()
+=======
+    public org.xmlsoap.schemas.soap.encoding.RootAttribute.Root xgetRoot()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -69,8 +77,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * True if has "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetRoot()
+=======
+    public boolean isSetRoot()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -82,8 +94,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets the "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setRoot(boolean root)
+=======
+    public void setRoot(boolean root)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -101,8 +117,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Sets (as xml) the "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetRoot(org.xmlsoap.schemas.soap.encoding.RootAttribute.Root root)
+=======
+    public void xsetRoot(org.xmlsoap.schemas.soap.encoding.RootAttribute.Root root)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -120,8 +140,12 @@ public class RootAttributeImpl extends org.apache.xmlbeans.impl.values.XmlComple
     /**
      * Unsets the "root" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetRoot()
+=======
+    public void unsetRoot()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

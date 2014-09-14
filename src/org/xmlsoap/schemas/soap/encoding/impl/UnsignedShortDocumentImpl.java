@@ -27,8 +27,12 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Gets the "unsignedShort" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedShort getUnsignedShort()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedShort getUnsignedShort()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Sets the "unsignedShort" element
      */
+<<<<<<< HEAD
     @Override
 	public void setUnsignedShort(org.xmlsoap.schemas.soap.encoding.UnsignedShort unsignedShort)
+=======
+    public void setUnsignedShort(org.xmlsoap.schemas.soap.encoding.UnsignedShort unsignedShort)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class UnsignedShortDocumentImpl extends org.apache.xmlbeans.impl.values.X
     /**
      * Appends and returns a new empty "unsignedShort" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedShort addNewUnsignedShort()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedShort addNewUnsignedShort()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

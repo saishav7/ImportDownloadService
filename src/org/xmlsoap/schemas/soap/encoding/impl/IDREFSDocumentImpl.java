@@ -27,8 +27,12 @@ public class IDREFSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Gets the "IDREFS" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.IDREFS getIDREFS()
+=======
+    public org.xmlsoap.schemas.soap.encoding.IDREFS getIDREFS()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class IDREFSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Sets the "IDREFS" element
      */
+<<<<<<< HEAD
     @Override
 	public void setIDREFS(org.xmlsoap.schemas.soap.encoding.IDREFS idrefs)
+=======
+    public void setIDREFS(org.xmlsoap.schemas.soap.encoding.IDREFS idrefs)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class IDREFSDocumentImpl extends org.apache.xmlbeans.impl.values.XmlCompl
     /**
      * Appends and returns a new empty "IDREFS" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.IDREFS addNewIDREFS()
+=======
+    public org.xmlsoap.schemas.soap.encoding.IDREFS addNewIDREFS()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

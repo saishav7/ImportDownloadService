@@ -27,8 +27,12 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Gets the "unsignedLong" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedLong getUnsignedLong()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedLong getUnsignedLong()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Sets the "unsignedLong" element
      */
+<<<<<<< HEAD
     @Override
 	public void setUnsignedLong(org.xmlsoap.schemas.soap.encoding.UnsignedLong unsignedLong)
+=======
+    public void setUnsignedLong(org.xmlsoap.schemas.soap.encoding.UnsignedLong unsignedLong)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class UnsignedLongDocumentImpl extends org.apache.xmlbeans.impl.values.Xm
     /**
      * Appends and returns a new empty "unsignedLong" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.UnsignedLong addNewUnsignedLong()
+=======
+    public org.xmlsoap.schemas.soap.encoding.UnsignedLong addNewUnsignedLong()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

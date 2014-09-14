@@ -27,8 +27,12 @@ public class PositiveIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Gets the "positiveInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.PositiveInteger getPositiveInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.PositiveInteger getPositiveInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class PositiveIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Sets the "positiveInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public void setPositiveInteger(org.xmlsoap.schemas.soap.encoding.PositiveInteger positiveInteger)
+=======
+    public void setPositiveInteger(org.xmlsoap.schemas.soap.encoding.PositiveInteger positiveInteger)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class PositiveIntegerDocumentImpl extends org.apache.xmlbeans.impl.values
     /**
      * Appends and returns a new empty "positiveInteger" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.PositiveInteger addNewPositiveInteger()
+=======
+    public org.xmlsoap.schemas.soap.encoding.PositiveInteger addNewPositiveInteger()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

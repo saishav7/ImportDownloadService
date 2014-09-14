@@ -27,8 +27,12 @@ public class GYearMonthDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Gets the "gYearMonth" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GYearMonth getGYearMonth()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GYearMonth getGYearMonth()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class GYearMonthDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "gYearMonth" element
      */
+<<<<<<< HEAD
     @Override
 	public void setGYearMonth(org.xmlsoap.schemas.soap.encoding.GYearMonth gYearMonth)
+=======
+    public void setGYearMonth(org.xmlsoap.schemas.soap.encoding.GYearMonth gYearMonth)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class GYearMonthDocumentImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Appends and returns a new empty "gYearMonth" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.GYearMonth addNewGYearMonth()
+=======
+    public org.xmlsoap.schemas.soap.encoding.GYearMonth addNewGYearMonth()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

@@ -27,8 +27,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Gets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public java.lang.String getArrayType()
+=======
+    public java.lang.String getArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Gets (as xml) the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public org.apache.xmlbeans.XmlString xgetArrayType()
+=======
+    public org.apache.xmlbeans.XmlString xgetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -61,8 +69,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * True if has "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public boolean isSetArrayType()
+=======
+    public boolean isSetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -74,8 +86,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void setArrayType(java.lang.String arrayType)
+=======
+    public void setArrayType(java.lang.String arrayType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -93,8 +109,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Sets (as xml) the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
+=======
+    public void xsetArrayType(org.apache.xmlbeans.XmlString arrayType)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -112,8 +132,12 @@ public class ArrayTypeAttributeImpl extends org.apache.xmlbeans.impl.values.XmlC
     /**
      * Unsets the "arrayType" attribute
      */
+<<<<<<< HEAD
     @Override
 	public void unsetArrayType()
+=======
+    public void unsetArrayType()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {

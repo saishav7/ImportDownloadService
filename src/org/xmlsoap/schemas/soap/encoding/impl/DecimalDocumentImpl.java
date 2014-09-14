@@ -27,8 +27,12 @@ public class DecimalDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Gets the "decimal" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Decimal getDecimal()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Decimal getDecimal()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -46,8 +50,12 @@ public class DecimalDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Sets the "decimal" element
      */
+<<<<<<< HEAD
     @Override
 	public void setDecimal(org.xmlsoap.schemas.soap.encoding.Decimal decimal)
+=======
+    public void setDecimal(org.xmlsoap.schemas.soap.encoding.Decimal decimal)
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
@@ -65,8 +73,12 @@ public class DecimalDocumentImpl extends org.apache.xmlbeans.impl.values.XmlComp
     /**
      * Appends and returns a new empty "decimal" element
      */
+<<<<<<< HEAD
     @Override
 	public org.xmlsoap.schemas.soap.encoding.Decimal addNewDecimal()
+=======
+    public org.xmlsoap.schemas.soap.encoding.Decimal addNewDecimal()
+>>>>>>> 879924f9006732dfac0289a1b05d78b9f43c0c85
     {
         synchronized (monitor())
         {
